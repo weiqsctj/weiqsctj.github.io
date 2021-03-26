@@ -23,26 +23,24 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"www.weiqsctj.wang","root":"/","images":"/images","scheme":"Muse","version":"8.2.1","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"slideDownBigOut"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
-<meta name="description" content="区别API、框架、插件、组件、控件等API概念 　　提供给不同语言的一个接口，在对应函数内提供相应的方法（控制Windows各个部件的外观和行为的一套预先定义的Windows函数），只要用js语法调用想要的功能。例，js内BOM的screen方法。 目的 　　对底层的封装，将一些不会变化的东西封装一下，可以提高开发效率。 API理解 　　JS的api有很多的功能，只要知道有这样的东西，到时候直接去">
+<meta name="description" content="微信小程序UI组件库微信小程序开发的过程中，不借助UI组件库开发出来的页面，不但要花费我们更多的时间，页面的美观上也有一定差距，毕竟颜狗嘛~。 所以我需要拥有常用的几个UI组件库，个人收藏。 WeUIWeUI 是微信官方出品的组件库，它沿用了微信的视觉设计与交互设计，提供了各类原生组件的基础样式，风格简约大方。选用这一套组件库，可以让你的小程序与微信本身保持一致的界面风格。 官方组件库能够满足基础">
 <meta property="og:type" content="article">
-<meta property="og:title" content="区分组件、api等">
-<meta property="og:url" content="http://www.weiqsctj.wang/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/index.html">
+<meta property="og:title" content="微信小程序ui组件库">
+<meta property="og:url" content="http://www.weiqsctj.wang/2021/03/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fui%E7%BB%84%E4%BB%B6%E5%BA%93/index.html">
 <meta property="og:site_name" content="薇清时">
-<meta property="og:description" content="区别API、框架、插件、组件、控件等API概念 　　提供给不同语言的一个接口，在对应函数内提供相应的方法（控制Windows各个部件的外观和行为的一套预先定义的Windows函数），只要用js语法调用想要的功能。例，js内BOM的screen方法。 目的 　　对底层的封装，将一些不会变化的东西封装一下，可以提高开发效率。 API理解 　　JS的api有很多的功能，只要知道有这样的东西，到时候直接去">
+<meta property="og:description" content="微信小程序UI组件库微信小程序开发的过程中，不借助UI组件库开发出来的页面，不但要花费我们更多的时间，页面的美观上也有一定差距，毕竟颜狗嘛~。 所以我需要拥有常用的几个UI组件库，个人收藏。 WeUIWeUI 是微信官方出品的组件库，它沿用了微信的视觉设计与交互设计，提供了各类原生组件的基础样式，风格简约大方。选用这一套组件库，可以让你的小程序与微信本身保持一致的界面风格。 官方组件库能够满足基础">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://www.weiqsctj.wang/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/2340.jpg">
-<meta property="article:published_time" content="2021-02-27T07:27:27.000Z">
-<meta property="article:modified_time" content="2021-02-27T07:36:03.259Z">
+<meta property="og:image" content="http://www.weiqsctj.wang/2021/03/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fui%E7%BB%84%E4%BB%B6%E5%BA%93/2865.jpg">
+<meta property="article:published_time" content="2021-03-26T02:00:51.000Z">
+<meta property="article:modified_time" content="2021-03-26T02:16:19.527Z">
 <meta property="article:author" content="清时">
-<meta property="article:tag" content="API">
-<meta property="article:tag" content="组件">
-<meta property="article:tag" content="框架">
-<meta property="article:tag" content="库">
+<meta property="article:tag" content="微信小程序">
+<meta property="article:tag" content="ui">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://www.weiqsctj.wang/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/2340.jpg">
+<meta name="twitter:image" content="http://www.weiqsctj.wang/2021/03/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fui%E7%BB%84%E4%BB%B6%E5%BA%93/2865.jpg">
 
 
-<link rel="canonical" href="http://www.weiqsctj.wang/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/">
+<link rel="canonical" href="http://www.weiqsctj.wang/2021/03/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fui%E7%BB%84%E4%BB%B6%E5%BA%93/">
 
 
 <script class="page-configurations">
@@ -54,7 +52,7 @@
     lang   : 'zh-CN'
   };
 </script>
-<title>区分组件、api等 | 薇清时</title>
+<title>微信小程序ui组件库 | 薇清时</title>
   
 
 
@@ -166,7 +164,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8C%BA%E5%88%ABAPI%E3%80%81%E6%A1%86%E6%9E%B6%E3%80%81%E6%8F%92%E4%BB%B6%E3%80%81%E7%BB%84%E4%BB%B6%E3%80%81%E6%8E%A7%E4%BB%B6%E7%AD%89"><span class="nav-number">1.</span> <span class="nav-text">区别API、框架、插件、组件、控件等</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#API"><span class="nav-number">1.1.</span> <span class="nav-text">API</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A1%86%E6%9E%B6"><span class="nav-number">1.2.</span> <span class="nav-text">框架</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E7%B1%BB"><span class="nav-number">1.2.1.</span> <span class="nav-text">分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A1%86%E6%9E%B6%E4%B8%8E%E6%8F%92%E4%BB%B6%E5%8C%BA%E5%88%AB"><span class="nav-number">1.2.2.</span> <span class="nav-text">框架与插件区别</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%93"><span class="nav-number">1.3.</span> <span class="nav-text">库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BA%93%E5%92%8C%E6%A1%86%E6%9E%B6%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">1.3.1.</span> <span class="nav-text">库和框架的区别</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%92%E4%BB%B6"><span class="nav-number">1.4.</span> <span class="nav-text">插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%84%E4%BB%B6"><span class="nav-number">1.5.</span> <span class="nav-text">组件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%84%E4%BB%B6%E5%92%8C%E6%8F%92%E4%BB%B6%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">1.5.1.</span> <span class="nav-text">组件和插件的区别</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A7%E4%BB%B6"><span class="nav-number">1.6.</span> <span class="nav-text">控件</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8FUI%E7%BB%84%E4%BB%B6%E5%BA%93"><span class="nav-number">1.</span> <span class="nav-text">微信小程序UI组件库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#WeUI"><span class="nav-number">1.1.</span> <span class="nav-text">WeUI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ColorUI-%E7%BB%84%E4%BB%B6%E5%BA%93"><span class="nav-number">1.2.</span> <span class="nav-text">ColorUI 组件库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vant-%E7%BB%84%E4%BB%B6%E5%BA%93"><span class="nav-number">1.3.</span> <span class="nav-text">Vant 组件库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iViewUI"><span class="nav-number">1.4.</span> <span class="nav-text">iViewUI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ZanUI-WeApp"><span class="nav-number">1.5.</span> <span class="nav-text">ZanUI WeApp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MinUI"><span class="nav-number">1.6.</span> <span class="nav-text">MinUI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vux"><span class="nav-number">1.7.</span> <span class="nav-text">vux</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -264,7 +262,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.weiqsctj.wang/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/">
+    <link itemprop="mainEntityOfPage" href="http://www.weiqsctj.wang/2021/03/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fui%E7%BB%84%E4%BB%B6%E5%BA%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -277,7 +275,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          区分组件、api等
+          微信小程序ui组件库
         </h1>
 
         <div class="post-meta-container">
@@ -289,7 +287,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-02-27 15:27:27 / 修改时间：15:36:03" itemprop="dateCreated datePublished" datetime="2021-02-27T15:27:27+08:00">2021-02-27</time>
+      <time title="创建时间：2021-03-26 10:00:51 / 修改时间：10:16:19" itemprop="dateCreated datePublished" datetime="2021-03-26T10:00:51+08:00">2021-03-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -311,32 +309,36 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="区别API、框架、插件、组件、控件等"><a href="#区别API、框架、插件、组件、控件等" class="headerlink" title="区别API、框架、插件、组件、控件等"></a>区别API、框架、插件、组件、控件等</h1><h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>概念</p>
-<p>　　提供给不同语言的一个<strong>接口</strong>，在对应函数内提供相应的<strong>方法</strong>（控制Windows各个部件的外观和行为的一套预先定义的Windows函数），只要用js语法调用想要的功能。例，js内BOM的screen方法。</p>
-<p>目的</p>
-<p>　　对底层的封装，将一些不会变化的东西封装一下，可以提高开发效率。</p>
-<p>API理解</p>
-<p>　　JS的api有很多的功能，只要知道有这样的东西，到时候直接去网上找调用的方法就可以了。例，百度地图的API。</p>
-<p> <img src="/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/2340.jpg" alt="区分"></p>
-<h2 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h2><p>将常用的方法进行封装，方便调取使用。但是也有各种各样的严格约束。比如bootstrap就是约束DOM结构的。麦当劳的桶</p>
-<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><p>嵌入式（MVC）：核心思想就是操作DOM。例如jQuery。</p>
-<p>渐进式（MVVM）：用到功能下载什么功能。</p>
-<ol>
-<li>Vue（中国尤大大开发的）</li>
-<li>Angular（微软公司）</li>
-<li>React（facebook公司）</li>
-</ol>
-<h3 id="框架与插件区别"><a href="#框架与插件区别" class="headerlink" title="框架与插件区别"></a>框架与插件区别</h3><p>框架相当于超大号的插件</p>
-<h2 id="库"><a href="#库" class="headerlink" title="库"></a>库</h2><p>只用引进来就能使用，jQuery其实也是一个库。</p>
-<span id="more"></span>
+        <h1 id="微信小程序UI组件库"><a href="#微信小程序UI组件库" class="headerlink" title="微信小程序UI组件库"></a>微信小程序UI组件库</h1><p>微信小程序开发的过程中，不借助UI组件库开发出来的页面，不但要花费我们更多的时间，页面的美观上也有一定差距，毕竟颜狗嘛~。</p>
+<p>所以我需要拥有常用的几个UI组件库，个人收藏。</p>
+<h2 id="WeUI"><a href="#WeUI" class="headerlink" title="WeUI"></a>WeUI</h2><p>WeUI 是微信官方出品的组件库，它沿用了微信的视觉设计与交互设计，提供了各类原生组件的基础样式，风格简约大方。选用这一套组件库，可以让你的小程序与微信本身保持一致的界面风格。</p>
+<p>官方组件库能够满足基础的界面需求，但是，如果你想要更加饱满的视觉，更加活泼的动效，恐怕 WeUI 就满足不了你的需要了。</p>
+<p>GitHub 地址：<a target="_blank" rel="noopener" href="https://github.com/Tencent/weui">https://github.com/Tencent/weui</a></p>
+<p><img src="/2021/03/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fui%E7%BB%84%E4%BB%B6%E5%BA%93/2865.jpg" alt="微信小程序UI组件库"></p>
+<h2 id="ColorUI-组件库"><a href="#ColorUI-组件库" class="headerlink" title="ColorUI 组件库"></a>ColorUI 组件库</h2><p>ColorUI 是由文晓港发布的高颜值组件库，侧重于视觉交互。比起 WeUI 的低调克制，ColorUI 色彩鲜亮，样式繁多。除了拥有非常丰富的原生组件的自定义样式，它还提供一些常见的页面元素，比如时间轴、步骤条、聊天页、模态窗口等等。</p>
+<p>ColorUI 给大家提供了高度自定义的组件，一些比较麻烦的样式，开发者只需调用其组件就能得以实现。不过，ColorUI 也不是万能的，比如，它尚未涉及购物类小程序所需的组件。</p>
+<p>GitHub 地址：<a target="_blank" rel="noopener" href="https://github.com/weilanwl/ColorUI">https://github.com/weilanwl/ColorUI</a></p>
+<!--more--->
 
-<h3 id="库和框架的区别"><a href="#库和框架的区别" class="headerlink" title="库和框架的区别"></a>库和框架的区别</h3><p>库：麦当劳的套餐。</p>
-<p>框架：麦当劳的桶。</p>
-<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p>前人写好可提高自己代码质量及页面展现效果的js文件。</p>
-<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><p>一系列功能封装起来，包含某种特定的职能，目的在于可以<strong>复用</strong>。</p>
-<h3 id="组件和插件的区别"><a href="#组件和插件的区别" class="headerlink" title="组件和插件的区别"></a>组件和插件的区别</h3><p>组件是给jQuery添加新的全局函数，如$.ajax方法。提供某个完整功能的模块。<strong>类级别</strong> </p>
-<p>插件是给jQuery对象添加方法。封装某个功能方法的函数。<strong>对象级别</strong></p>
-<h2 id="控件"><a href="#控件" class="headerlink" title="控件"></a>控件</h2><p>用JS写好的功能块。比如网页上日期选择。</p>
+<h2 id="Vant-组件库"><a href="#Vant-组件库" class="headerlink" title="Vant 组件库"></a>Vant 组件库</h2><p>Vant 是由有赞发布的，轻量的小程序 UI 组件库。如果你想制作一款电商、餐饮、外卖平台、票务预订等购物类小程序，选用 Vant 是较为合适的。为什么这么说呢？</p>
+<p>首先，我们来看「业务组件」这一块。可以看到，「商品卡片」与「提交订单栏」两个组件可以构成一个基本的「购物车」页面；而「商品卡片」与「商品导航」二者又可以组成一个简单的商店页面。</p>
+<p>对开发者非常友好，文档可以说是事无巨细了，而且在文档右侧，还可以预览样式哦。</p>
+<p>开发文档：<a target="_blank" rel="noopener" href="https://youzan.github.io/vant-weapp/#/intro">https://youzan.github.io/vant-weapp/#/intro</a><br>GitHub 地址：<a target="_blank" rel="noopener" href="https://github.com/youzan/vant-weapp">https://github.com/youzan/vant-weapp</a></p>
+<p>​                                                 </p>
+<h2 id="iViewUI"><a href="#iViewUI" class="headerlink" title="iViewUI"></a>iViewUI</h2><p>iViewUI 是由 TalkingData 发布的组件库。作为一款好用的组件库，布局、面板、列表、表单、顶部导航栏、底部导航栏等组件当然必不可少，那么 iViewUI 除了具备这些标配的组件，还有哪些亮点呢？</p>
+<p>iViewUI 同样有详细的文档，但是不支持网页预览，只能打开小程序预览。</p>
+<p>开发文档：<a target="_blank" rel="noopener" href="https://weapp.iviewui.com/docs/guide/start">https://weapp.iviewui.com/docs/guide/start</a><br>GitHub 地址：<a target="_blank" rel="noopener" href="https://github.com/TalkingData/iview-weapp">https://github.com/TalkingData/iview-weapp</a></p>
+<h2 id="ZanUI-WeApp"><a href="#ZanUI-WeApp" class="headerlink" title="ZanUI WeApp"></a>ZanUI WeApp</h2><p>ZanUI WeApp是有赞移动 Web UI 规范 ZanUI 的小程序实现版本，结合了微信的视觉规范，为用户提供更加统一的使用感受。</p>
+<p>现已包含 badge、btn、card、cell、dialog、icon、label、noticebar、panel、popup、switch、tab、toast、tooltips 等组件或元素。</p>
+<p>GitHub地址：<a target="_blank" rel="noopener" href="https://github.com/youzan/zanui-weapp">https://github.com/youzan/zanui-weapp</a><br>npm下载：npm i zanui-weapp</p>
+<p>另外，ZanUI也使用mpvue重写了zanui-weapp，实现了其中所有组件，为使用mpvue的开发者提供了方便。</p>
+<p>GitHub地址：<a target="_blank" rel="noopener" href="https://github.com/samwang1027/mpvue-zanui">https://github.com/samwang1027/mpvue-zanui</a><br>npm下载：npm i mpvue-zanui</p>
+<h2 id="MinUI"><a href="#MinUI" class="headerlink" title="MinUI"></a>MinUI</h2><p>MinUI 是蘑菇街前端开发团队开发的基于微信小程序自定义组件特性开发而成的一套简洁、易用、高效的组件库，适用场景广，覆盖小程序原生框架，各种小程序组件主流框架等，并且提供了专门的命令行工具。</p>
+<p>GitHub地址：<a target="_blank" rel="noopener" href="https://github.com/meili/minui">https://github.com/meili/minui</a></p>
+<h2 id="vux"><a href="#vux" class="headerlink" title="vux"></a>vux</h2><p>基于webpack + vue-loader + vux可以快速开发移动端页面，配合vux-loader方便你在WeUI的基础上定制需要的样式。</p>
+<p>vux-loader保证了组件按需使用，因此不用担心最终打包了整个vux的组件库代码。</p>
+<p>VUX并不完全依赖于WeUI，VUX 在 WeUI 的基础上扩展了多个常用组件，但是尽量保持整体UI样式接近WeUI的设计规范。</p>
+<p><a target="_blank" rel="noopener" href="https://vux.li/demos/v2/?x-page=v2-doc-home#/demo">https://vux.li/demos/v2/?x-page=v2-doc-home#/demo</a></p>
 
     </div>
 
@@ -354,7 +356,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="http://www.weiqsctj.wang/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/" title="区分组件、api等">http://www.weiqsctj.wang/2021/02/27/区分组件、api等/</a>
+      <a href="http://www.weiqsctj.wang/2021/03/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fui%E7%BB%84%E4%BB%B6%E5%BA%93/" title="微信小程序ui组件库">http://www.weiqsctj.wang/2021/03/26/微信小程序ui组件库/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -390,24 +392,19 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/API/" rel="tag"># API</a>
-              <a href="/tags/%E7%BB%84%E4%BB%B6/" rel="tag"># 组件</a>
-              <a href="/tags/%E6%A1%86%E6%9E%B6/" rel="tag"># 框架</a>
-              <a href="/tags/%E5%BA%93/" rel="tag"># 库</a>
+              <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" rel="tag"># 微信小程序</a>
+              <a href="/tags/ui/" rel="tag"># ui</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/02/26/%E9%80%9A%E4%BF%97%E7%90%86%E8%A7%A3%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/" rel="prev" title="通俗理解回调函数">
-                  <i class="fa fa-chevron-left"></i> 通俗理解回调函数
+                <a href="/2021/03/04/css%E5%88%9D%E5%A7%8B%E5%8C%96/" rel="prev" title="css初始化">
+                  <i class="fa fa-chevron-left"></i> css初始化
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/02/28/%E7%90%86%E8%A7%A3%E5%BC%82%E6%AD%A5/" rel="next" title="理解异步">
-                  理解异步 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>

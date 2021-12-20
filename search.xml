@@ -307,40 +307,6 @@ function fun(e){
       </tags>
   </entry>
   <entry>
-    <title>理解异步</title>
-    <url>/2021/02/28/%E7%90%86%E8%A7%A3%E5%BC%82%E6%AD%A5/</url>
-    <content><![CDATA[<h1 id="异步初步了解："><a href="#异步初步了解：" class="headerlink" title="异步初步了解："></a><strong>异步初步了解：</strong></h1><p>es6中碰到关于异步的问题，异步这个词自己知道是个什么意思，但是要我用代码解释出来的话…..有点难理解。所以接下来慢慢整理了一些异步的知识如下：</p>
-<h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><p>说到异步，肯定会联系出来它的兄弟–同步（Synchronous）。</p>
-<p>“同步模式”就是上一段的模式，<strong>后一个任务等待前一个任务结束，然后再执行</strong>，程序的执行顺序与任务的排列顺序是一致的、同步的.</p>
-<p>“异步模式”则完全不同，<strong>每一个任务有一个或多个回调函数（callback），前一个任务结束后，不是执行后一个任务，而是执行回调函数</strong>，后一个任务则是不等前一个任务结束就执行，所以程序的执行顺序与任务的排列顺序是不一致的、异步的。</p>
-<p>“异步模式”非常重要。在浏览器端，耗时很长的操作都应该异步执行，避免浏览器失去响应，最好的例子就是Ajax操作。</p>
-<img src="/2021/02/28/%E7%90%86%E8%A7%A3%E5%BC%82%E6%AD%A5/9300.jpg" alt="异步">
-
-<h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><p>介绍了理论，没啥用..直接用最直观的代码来体现吧：</p>
-<span id="more"></span>
-
-<body>
-       <button id="Button">展示异步操作</button>
-
-<pre><code>   &lt;script&gt;
-     var Button=document.getElementById(&#39;Button&#39;);
-     Button.onclick=function()&#123;
-         alert(&#39;展示异步操作--A&#39;);
-     &#125;
-     alert(&#39;展示异步操作--B&#39;);
-   &lt;/script&gt;
-</code></pre>
-<p>​     </p></body><br>这个简单的例子就体现出了异步和同步的区别了：<p></p>
-<p>平常写的代码，都是从上到下来执行的，一般上面的语句还没有执行结束的情况下，下面的语句是不会执行的，但是这段代码我们很容易测试出：先弹出B窗口，当你点击按钮的时候才开始弹出A窗口。 这就是典型的异步操作，不用等把上面的语句全部执行完才开始执行下面的语句。</p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>异步</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>区分组件、api等</title>
     <url>/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/</url>
     <content><![CDATA[<h1 id="区别API、框架、插件、组件、控件等"><a href="#区别API、框架、插件、组件、控件等" class="headerlink" title="区别API、框架、插件、组件、控件等"></a>区别API、框架、插件、组件、控件等</h1><h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>概念</p>
@@ -420,6 +386,40 @@ function fun(e){
       <tags>
         <tag>微信小程序</tag>
         <tag>ui</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>理解异步</title>
+    <url>/2021/02/28/%E7%90%86%E8%A7%A3%E5%BC%82%E6%AD%A5/</url>
+    <content><![CDATA[<h1 id="异步初步了解："><a href="#异步初步了解：" class="headerlink" title="异步初步了解："></a><strong>异步初步了解：</strong></h1><p>es6中碰到关于异步的问题，异步这个词自己知道是个什么意思，但是要我用代码解释出来的话…..有点难理解。所以接下来慢慢整理了一些异步的知识如下：</p>
+<h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><p>说到异步，肯定会联系出来它的兄弟–同步（Synchronous）。</p>
+<p>“同步模式”就是上一段的模式，<strong>后一个任务等待前一个任务结束，然后再执行</strong>，程序的执行顺序与任务的排列顺序是一致的、同步的.</p>
+<p>“异步模式”则完全不同，<strong>每一个任务有一个或多个回调函数（callback），前一个任务结束后，不是执行后一个任务，而是执行回调函数</strong>，后一个任务则是不等前一个任务结束就执行，所以程序的执行顺序与任务的排列顺序是不一致的、异步的。</p>
+<p>“异步模式”非常重要。在浏览器端，耗时很长的操作都应该异步执行，避免浏览器失去响应，最好的例子就是Ajax操作。</p>
+<img src="/2021/02/28/%E7%90%86%E8%A7%A3%E5%BC%82%E6%AD%A5/9300.jpg" alt="异步">
+
+<h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><p>介绍了理论，没啥用..直接用最直观的代码来体现吧：</p>
+<span id="more"></span>
+
+<body>
+       <button id="Button">展示异步操作</button>
+
+<pre><code>   &lt;script&gt;
+     var Button=document.getElementById(&#39;Button&#39;);
+     Button.onclick=function()&#123;
+         alert(&#39;展示异步操作--A&#39;);
+     &#125;
+     alert(&#39;展示异步操作--B&#39;);
+   &lt;/script&gt;
+</code></pre>
+<p>​     </p></body><br>这个简单的例子就体现出了异步和同步的区别了：<p></p>
+<p>平常写的代码，都是从上到下来执行的，一般上面的语句还没有执行结束的情况下，下面的语句是不会执行的，但是这段代码我们很容易测试出：先弹出B窗口，当你点击按钮的时候才开始弹出A窗口。 这就是典型的异步操作，不用等把上面的语句全部执行完才开始执行下面的语句。</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>异步</tag>
       </tags>
   </entry>
   <entry>

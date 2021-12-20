@@ -23,29 +23,6 @@
       </tags>
   </entry>
   <entry>
-    <title>TodoList</title>
-    <url>/2021/03/02/TodoList/</url>
-    <content><![CDATA[<h1 id="TodoList代码-项目模块"><a href="#TodoList代码-项目模块" class="headerlink" title="TodoList代码-项目模块"></a>TodoList代码-项目模块</h1><!DOCTYPE html>
-
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span> <span class="attr">dir</span>=<span class="string">&quot;ltr&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;style.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;/font-awesome/css/font-awesome.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/jQuery/jquery-3.5.1.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">class</span>=<span class="string">&quot;txtb&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Add a task&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;notcomp&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">​    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>异常(Not Completed)<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;comp&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">​    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>正常(Completed)<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;ToDolist.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="/2021/03/02/TodoList/2007.jpg"></p>
-<span id="more"></span>
-
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&quot;montserrat&quot;</span>,sans-serif;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(<span class="number">120deg</span>,<span class="number">#487eb0</span>,<span class="number">#fbc531</span>);</span><br><span class="line">  <span class="attribute">min-height</span>: <span class="number">100vh</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">800px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: auto;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.txtb</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">border</span>: none;</span><br><span class="line">  <span class="attribute">border-bottom</span>: <span class="number">2px</span> solid <span class="number">#000</span>;</span><br><span class="line">  <span class="attribute">background</span>: none;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">outline</span>: none;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">18px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h3</span>&#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">10px</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.task</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0.5</span>);</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">18px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">6px</span> <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.task</span> <span class="selector-tag">i</span>&#123;</span><br><span class="line">  <span class="attribute">float</span>: right;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.comp</span> <span class="selector-class">.task</span>&#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,.<span class="number">5</span>);</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$(&quot;.txtb&quot;).on(&quot;keyup&quot;,function(e)&#123;</span><br><span class="line">  &#x2F;&#x2F;13  means enter button</span><br><span class="line">  if(e.keyCode &#x3D;&#x3D; 13 &amp;&amp; $(&quot;.txtb&quot;).val() !&#x3D; &quot;&quot;)</span><br><span class="line">  &#x2F;&#x2F; val返回表单字段的值</span><br><span class="line">  &#123;</span><br><span class="line">    var task &#x3D; $(&quot;&lt;div class&#x3D;&#39;task&#39;&gt;&lt;&#x2F;div&gt;&quot;).text($(&quot;.txtb&quot;).val());</span><br><span class="line">    var del &#x3D; $(&quot;&lt;i class&#x3D;&#39;fas fa-trash-alt&#39;&gt;&lt;&#x2F;i&gt;&quot;).click(function()</span><br><span class="line">    &#123;</span><br><span class="line">      var p &#x3D; $(this).parent();</span><br><span class="line">      p.fadeOut(function()&#123;</span><br><span class="line">        p.remove();</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line">    var check &#x3D; $(&quot;&lt;i class&#x3D;&#39;fas fa-check&#39;&gt;&lt;&#x2F;i&gt;&quot;).click(function()&#123;</span><br><span class="line">      var p &#x3D; $(this).parent();</span><br><span class="line">      p.fadeOut(function()&#123;</span><br><span class="line">        $(&quot;.comp&quot;).append(p);</span><br><span class="line">        p.fadeIn();</span><br><span class="line">      &#125;);</span><br><span class="line">      $(this).remove();</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    task.append(del,check);</span><br><span class="line">    $(&quot;.notcomp&quot;).append(task);</span><br><span class="line">      &#x2F;&#x2F;to clear the input</span><br><span class="line">    $(&quot;.txtb&quot;).val(&quot;&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>项目</category>
-      </categories>
-      <tags>
-        <tag>项目模块</tag>
-        <tag>代码</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo的书写和使用</title>
     <url>/2021/12/20/Hexo%E7%9A%84%E4%B9%A6%E5%86%99%E5%92%8C%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h1 id="书写和使用Hexo"><a href="#书写和使用Hexo" class="headerlink" title="书写和使用Hexo"></a><strong>书写和使用Hexo</strong></h1><blockquote>
@@ -90,6 +67,8 @@
 <p>Alt+Shift+5：删除线</p>
 <span id="more"></span> 
 
+
+
 <h4 id="（3）引用块"><a href="#（3）引用块" class="headerlink" title="（3）引用块"></a>（3）引用块</h4><p>Markdown 语法：</p>
 <blockquote>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 文字引用</span><br></pre></td></tr></table></figure>
@@ -99,6 +78,8 @@
 <figure class="highlight arcade"><table><tr><td class="code"><pre><span class="line"><span class="string">`行内代码`</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight arcade"><table><tr><td class="code"><pre><span class="line">​<span class="string">``</span><span class="string">`</span></span><br><span class="line"><span class="string">多行代码</span></span><br><span class="line"><span class="string">多行代码</span></span><br><span class="line"><span class="string">​`</span><span class="string">``</span></span><br></pre></td></tr></table></figure>
+
+
 
 <p>Typora 快捷键：</p>
 <p>行内代码：Ctrl+Shift+`</p>
@@ -174,6 +155,29 @@
       </tags>
   </entry>
   <entry>
+    <title>TodoList</title>
+    <url>/2021/03/02/TodoList/</url>
+    <content><![CDATA[<h1 id="TodoList代码-项目模块"><a href="#TodoList代码-项目模块" class="headerlink" title="TodoList代码-项目模块"></a>TodoList代码-项目模块</h1><!DOCTYPE html>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span> <span class="attr">dir</span>=<span class="string">&quot;ltr&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;style.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;/font-awesome/css/font-awesome.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/jQuery/jquery-3.5.1.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">class</span>=<span class="string">&quot;txtb&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Add a task&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;notcomp&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">​    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>异常(Not Completed)<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;comp&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">​    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>正常(Completed)<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;ToDolist.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/03/02/TodoList/2007.jpg"></p>
+<span id="more"></span>
+
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&quot;montserrat&quot;</span>,sans-serif;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(<span class="number">120deg</span>,<span class="number">#487eb0</span>,<span class="number">#fbc531</span>);</span><br><span class="line">  <span class="attribute">min-height</span>: <span class="number">100vh</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">800px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: auto;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.txtb</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">border</span>: none;</span><br><span class="line">  <span class="attribute">border-bottom</span>: <span class="number">2px</span> solid <span class="number">#000</span>;</span><br><span class="line">  <span class="attribute">background</span>: none;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">outline</span>: none;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">18px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h3</span>&#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">10px</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.task</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0.5</span>);</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">18px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">6px</span> <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.task</span> <span class="selector-tag">i</span>&#123;</span><br><span class="line">  <span class="attribute">float</span>: right;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.comp</span> <span class="selector-class">.task</span>&#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,.<span class="number">5</span>);</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$(&quot;.txtb&quot;).on(&quot;keyup&quot;,function(e)&#123;</span><br><span class="line">  &#x2F;&#x2F;13  means enter button</span><br><span class="line">  if(e.keyCode &#x3D;&#x3D; 13 &amp;&amp; $(&quot;.txtb&quot;).val() !&#x3D; &quot;&quot;)</span><br><span class="line">  &#x2F;&#x2F; val返回表单字段的值</span><br><span class="line">  &#123;</span><br><span class="line">    var task &#x3D; $(&quot;&lt;div class&#x3D;&#39;task&#39;&gt;&lt;&#x2F;div&gt;&quot;).text($(&quot;.txtb&quot;).val());</span><br><span class="line">    var del &#x3D; $(&quot;&lt;i class&#x3D;&#39;fas fa-trash-alt&#39;&gt;&lt;&#x2F;i&gt;&quot;).click(function()</span><br><span class="line">    &#123;</span><br><span class="line">      var p &#x3D; $(this).parent();</span><br><span class="line">      p.fadeOut(function()&#123;</span><br><span class="line">        p.remove();</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line">    var check &#x3D; $(&quot;&lt;i class&#x3D;&#39;fas fa-check&#39;&gt;&lt;&#x2F;i&gt;&quot;).click(function()&#123;</span><br><span class="line">      var p &#x3D; $(this).parent();</span><br><span class="line">      p.fadeOut(function()&#123;</span><br><span class="line">        $(&quot;.comp&quot;).append(p);</span><br><span class="line">        p.fadeIn();</span><br><span class="line">      &#125;);</span><br><span class="line">      $(this).remove();</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    task.append(del,check);</span><br><span class="line">    $(&quot;.notcomp&quot;).append(task);</span><br><span class="line">      &#x2F;&#x2F;to clear the input</span><br><span class="line">    $(&quot;.txtb&quot;).val(&quot;&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>项目</category>
+      </categories>
+      <tags>
+        <tag>项目模块</tag>
+        <tag>代码</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>css初始化</title>
     <url>/2021/03/04/css%E5%88%9D%E5%A7%8B%E5%8C%96/</url>
     <content><![CDATA[<h1 id="初始化CSS"><a href="#初始化CSS" class="headerlink" title="初始化CSS"></a>初始化CSS</h1><p>建站老手都知道，这是为了考虑到浏览器的兼容问题，其实不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面差异。当然，初始化样式会对SEO有一定的影响，但鱼和熊掌不可兼得，但力求影响最小的情况下初始化。</p>
@@ -205,6 +209,33 @@
       <tags>
         <tag>css</tag>
         <tag>兼容</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>get与post方法</title>
+    <url>/2021/03/01/get%E4%B8%8Epost%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="GET-和-POST-方法的区别："><a href="#GET-和-POST-方法的区别：" class="headerlink" title="GET 和 POST 方法的区别："></a><strong>GET 和 POST 方法的区别</strong>：</h1><h2 id="1、发送的数据数量"><a href="#1、发送的数据数量" class="headerlink" title="1、发送的数据数量"></a><strong>1、发送的数据数量</strong></h2><p>在 GET 中，只能发送有限数量的数据，因为数据是在 URL 中发送的。</p>
+<p>在 POST 中，可以发送大量的数据，因为数据是在正文主体中发送的。</p>
+<h2 id="2、安全性"><a href="#2、安全性" class="headerlink" title="2、安全性"></a><strong>2、安全性</strong></h2><p>GET 方法发送的数据不受保护，因为数据在 URL 栏中公开，这增加了漏洞和黑客攻击的风险。</p>
+<p>POST 方法发送的数据是安全的，因为数据未在 URL 栏中公开，还可以在其中使用多种编码技术，这使其具有弹性。</p>
+<p><img src="/2021/03/01/get%E4%B8%8Epost%E6%96%B9%E6%B3%95/4333.jpg" alt="get与post"></p>
+<h2 id="3、加入书签中"><a href="#3、加入书签中" class="headerlink" title="3、加入书签中"></a><strong>3、加入书签中</strong></h2><p>GET 查询的结果可以加入书签中，因为它以 URL 的形式存在；而 POST 查询的结果无法加入书签中。</p>
+<span id="more"></span>
+
+<h2 id="4、编码"><a href="#4、编码" class="headerlink" title="4、编码"></a><strong>4、编码</strong></h2><p>在表单中使用 GET 方法时，数据类型中只接受 ASCII 字符。</p>
+<p>在表单提交时，POST 方法不绑定表单数据类型，并允许二进制和 ASCII 字符。</p>
+<h2 id="5、可变大小"><a href="#5、可变大小" class="headerlink" title="5、可变大小"></a><strong>5、可变大小</strong></h2><p>GET 方法中的可变大小约为 2000 个字符。</p>
+<p>POST 方法最多允许 8 Mb 的可变大小。</p>
+<h2 id="6、缓存"><a href="#6、缓存" class="headerlink" title="6、缓存"></a><strong>6、缓存</strong></h2><p>GET 方法的数据是可缓存的，而 POST 方法的数据是无法缓存的。</p>
+<h2 id="7、主要作用"><a href="#7、主要作用" class="headerlink" title="7、主要作用"></a><strong>7、主要作用</strong></h2><p>GET 方法主要用于获取信息。而 POST 方法主要用于更新数据。</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>jquery</tag>
+        <tag>Ajax</tag>
+        <tag>get,post</tag>
       </tags>
   </entry>
   <entry>
@@ -273,75 +304,6 @@ function fun(e){
         <tag>事件冒泡</tag>
         <tag>JavaScript</tag>
         <tag>e.target</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>get与post方法</title>
-    <url>/2021/03/01/get%E4%B8%8Epost%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="GET-和-POST-方法的区别："><a href="#GET-和-POST-方法的区别：" class="headerlink" title="GET 和 POST 方法的区别："></a><strong>GET 和 POST 方法的区别</strong>：</h1><h2 id="1、发送的数据数量"><a href="#1、发送的数据数量" class="headerlink" title="1、发送的数据数量"></a><strong>1、发送的数据数量</strong></h2><p>在 GET 中，只能发送有限数量的数据，因为数据是在 URL 中发送的。</p>
-<p>在 POST 中，可以发送大量的数据，因为数据是在正文主体中发送的。</p>
-<h2 id="2、安全性"><a href="#2、安全性" class="headerlink" title="2、安全性"></a><strong>2、安全性</strong></h2><p>GET 方法发送的数据不受保护，因为数据在 URL 栏中公开，这增加了漏洞和黑客攻击的风险。</p>
-<p>POST 方法发送的数据是安全的，因为数据未在 URL 栏中公开，还可以在其中使用多种编码技术，这使其具有弹性。</p>
-<p><img src="/2021/03/01/get%E4%B8%8Epost%E6%96%B9%E6%B3%95/4333.jpg" alt="get与post"></p>
-<h2 id="3、加入书签中"><a href="#3、加入书签中" class="headerlink" title="3、加入书签中"></a><strong>3、加入书签中</strong></h2><p>GET 查询的结果可以加入书签中，因为它以 URL 的形式存在；而 POST 查询的结果无法加入书签中。</p>
-<span id="more"></span>
-
-<h2 id="4、编码"><a href="#4、编码" class="headerlink" title="4、编码"></a><strong>4、编码</strong></h2><p>在表单中使用 GET 方法时，数据类型中只接受 ASCII 字符。</p>
-<p>在表单提交时，POST 方法不绑定表单数据类型，并允许二进制和 ASCII 字符。</p>
-<h2 id="5、可变大小"><a href="#5、可变大小" class="headerlink" title="5、可变大小"></a><strong>5、可变大小</strong></h2><p>GET 方法中的可变大小约为 2000 个字符。</p>
-<p>POST 方法最多允许 8 Mb 的可变大小。</p>
-<h2 id="6、缓存"><a href="#6、缓存" class="headerlink" title="6、缓存"></a><strong>6、缓存</strong></h2><p>GET 方法的数据是可缓存的，而 POST 方法的数据是无法缓存的。</p>
-<h2 id="7、主要作用"><a href="#7、主要作用" class="headerlink" title="7、主要作用"></a><strong>7、主要作用</strong></h2><p>GET 方法主要用于获取信息。而 POST 方法主要用于更新数据。</p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>jquery</tag>
-        <tag>Ajax</tag>
-        <tag>get,post</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>微信小程序ui组件库</title>
-    <url>/2021/03/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fui%E7%BB%84%E4%BB%B6%E5%BA%93/</url>
-    <content><![CDATA[<h1 id="微信小程序UI组件库"><a href="#微信小程序UI组件库" class="headerlink" title="微信小程序UI组件库"></a>微信小程序UI组件库</h1><p>微信小程序开发的过程中，不借助UI组件库开发出来的页面，不但要花费我们更多的时间，页面的美观上也有一定差距，毕竟颜狗嘛~。</p>
-<p>所以我需要拥有常用的几个UI组件库，个人收藏。</p>
-<h2 id="WeUI"><a href="#WeUI" class="headerlink" title="WeUI"></a>WeUI</h2><p>WeUI 是微信官方出品的组件库，它沿用了微信的视觉设计与交互设计，提供了各类原生组件的基础样式，风格简约大方。选用这一套组件库，可以让你的小程序与微信本身保持一致的界面风格。</p>
-<p>官方组件库能够满足基础的界面需求，但是，如果你想要更加饱满的视觉，更加活泼的动效，恐怕 WeUI 就满足不了你的需要了。</p>
-<p>GitHub 地址：<a href="https://github.com/Tencent/weui">https://github.com/Tencent/weui</a></p>
-<p><img src="/2021/03/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fui%E7%BB%84%E4%BB%B6%E5%BA%93/2865.jpg" alt="微信小程序UI组件库"></p>
-<h2 id="ColorUI-组件库"><a href="#ColorUI-组件库" class="headerlink" title="ColorUI 组件库"></a>ColorUI 组件库</h2><p>ColorUI 是由文晓港发布的高颜值组件库，侧重于视觉交互。比起 WeUI 的低调克制，ColorUI 色彩鲜亮，样式繁多。除了拥有非常丰富的原生组件的自定义样式，它还提供一些常见的页面元素，比如时间轴、步骤条、聊天页、模态窗口等等。</p>
-<p>ColorUI 给大家提供了高度自定义的组件，一些比较麻烦的样式，开发者只需调用其组件就能得以实现。不过，ColorUI 也不是万能的，比如，它尚未涉及购物类小程序所需的组件。</p>
-<p>GitHub 地址：<a href="https://github.com/weilanwl/ColorUI">https://github.com/weilanwl/ColorUI</a></p>
-<!--more--->
-
-<h2 id="Vant-组件库"><a href="#Vant-组件库" class="headerlink" title="Vant 组件库"></a>Vant 组件库</h2><p>Vant 是由有赞发布的，轻量的小程序 UI 组件库。如果你想制作一款电商、餐饮、外卖平台、票务预订等购物类小程序，选用 Vant 是较为合适的。为什么这么说呢？</p>
-<p>首先，我们来看「业务组件」这一块。可以看到，「商品卡片」与「提交订单栏」两个组件可以构成一个基本的「购物车」页面；而「商品卡片」与「商品导航」二者又可以组成一个简单的商店页面。</p>
-<p>对开发者非常友好，文档可以说是事无巨细了，而且在文档右侧，还可以预览样式哦。</p>
-<p>开发文档：<a href="https://youzan.github.io/vant-weapp/#/intro">https://youzan.github.io/vant-weapp/#/intro</a><br>GitHub 地址：<a href="https://github.com/youzan/vant-weapp">https://github.com/youzan/vant-weapp</a></p>
-<p>​                                                 </p>
-<h2 id="iViewUI"><a href="#iViewUI" class="headerlink" title="iViewUI"></a>iViewUI</h2><p>iViewUI 是由 TalkingData 发布的组件库。作为一款好用的组件库，布局、面板、列表、表单、顶部导航栏、底部导航栏等组件当然必不可少，那么 iViewUI 除了具备这些标配的组件，还有哪些亮点呢？</p>
-<p>iViewUI 同样有详细的文档，但是不支持网页预览，只能打开小程序预览。</p>
-<p>开发文档：<a href="https://weapp.iviewui.com/docs/guide/start">https://weapp.iviewui.com/docs/guide/start</a><br>GitHub 地址：<a href="https://github.com/TalkingData/iview-weapp">https://github.com/TalkingData/iview-weapp</a></p>
-<h2 id="ZanUI-WeApp"><a href="#ZanUI-WeApp" class="headerlink" title="ZanUI WeApp"></a>ZanUI WeApp</h2><p>ZanUI WeApp是有赞移动 Web UI 规范 ZanUI 的小程序实现版本，结合了微信的视觉规范，为用户提供更加统一的使用感受。</p>
-<p>现已包含 badge、btn、card、cell、dialog、icon、label、noticebar、panel、popup、switch、tab、toast、tooltips 等组件或元素。</p>
-<p>GitHub地址：<a href="https://github.com/youzan/zanui-weapp">https://github.com/youzan/zanui-weapp</a><br>npm下载：npm i zanui-weapp</p>
-<p>另外，ZanUI也使用mpvue重写了zanui-weapp，实现了其中所有组件，为使用mpvue的开发者提供了方便。</p>
-<p>GitHub地址：<a href="https://github.com/samwang1027/mpvue-zanui">https://github.com/samwang1027/mpvue-zanui</a><br>npm下载：npm i mpvue-zanui</p>
-<h2 id="MinUI"><a href="#MinUI" class="headerlink" title="MinUI"></a>MinUI</h2><p>MinUI 是蘑菇街前端开发团队开发的基于微信小程序自定义组件特性开发而成的一套简洁、易用、高效的组件库，适用场景广，覆盖小程序原生框架，各种小程序组件主流框架等，并且提供了专门的命令行工具。</p>
-<p>GitHub地址：<a href="https://github.com/meili/minui">https://github.com/meili/minui</a></p>
-<h2 id="vux"><a href="#vux" class="headerlink" title="vux"></a>vux</h2><p>基于webpack + vue-loader + vux可以快速开发移动端页面，配合vux-loader方便你在WeUI的基础上定制需要的样式。</p>
-<p>vux-loader保证了组件按需使用，因此不用担心最终打包了整个vux的组件库代码。</p>
-<p>VUX并不完全依赖于WeUI，VUX 在 WeUI 的基础上扩展了多个常用组件，但是尽量保持整体UI样式接近WeUI的设计规范。</p>
-<p><a href="https://vux.li/demos/v2/?x-page=v2-doc-home#/demo">https://vux.li/demos/v2/?x-page=v2-doc-home#/demo</a></p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>微信小程序</tag>
-        <tag>ui</tag>
       </tags>
   </entry>
   <entry>
@@ -416,6 +378,48 @@ function fun(e){
         <tag>组件</tag>
         <tag>框架</tag>
         <tag>库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>微信小程序ui组件库</title>
+    <url>/2021/03/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fui%E7%BB%84%E4%BB%B6%E5%BA%93/</url>
+    <content><![CDATA[<h1 id="微信小程序UI组件库"><a href="#微信小程序UI组件库" class="headerlink" title="微信小程序UI组件库"></a>微信小程序UI组件库</h1><p>微信小程序开发的过程中，不借助UI组件库开发出来的页面，不但要花费我们更多的时间，页面的美观上也有一定差距，毕竟颜狗嘛~。</p>
+<p>所以我需要拥有常用的几个UI组件库，个人收藏。</p>
+<h2 id="WeUI"><a href="#WeUI" class="headerlink" title="WeUI"></a>WeUI</h2><p>WeUI 是微信官方出品的组件库，它沿用了微信的视觉设计与交互设计，提供了各类原生组件的基础样式，风格简约大方。选用这一套组件库，可以让你的小程序与微信本身保持一致的界面风格。</p>
+<p>官方组件库能够满足基础的界面需求，但是，如果你想要更加饱满的视觉，更加活泼的动效，恐怕 WeUI 就满足不了你的需要了。</p>
+<p>GitHub 地址：<a href="https://github.com/Tencent/weui">https://github.com/Tencent/weui</a></p>
+<p><img src="/2021/03/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fui%E7%BB%84%E4%BB%B6%E5%BA%93/2865.jpg" alt="微信小程序UI组件库"></p>
+<h2 id="ColorUI-组件库"><a href="#ColorUI-组件库" class="headerlink" title="ColorUI 组件库"></a>ColorUI 组件库</h2><p>ColorUI 是由文晓港发布的高颜值组件库，侧重于视觉交互。比起 WeUI 的低调克制，ColorUI 色彩鲜亮，样式繁多。除了拥有非常丰富的原生组件的自定义样式，它还提供一些常见的页面元素，比如时间轴、步骤条、聊天页、模态窗口等等。</p>
+<p>ColorUI 给大家提供了高度自定义的组件，一些比较麻烦的样式，开发者只需调用其组件就能得以实现。不过，ColorUI 也不是万能的，比如，它尚未涉及购物类小程序所需的组件。</p>
+<p>GitHub 地址：<a href="https://github.com/weilanwl/ColorUI">https://github.com/weilanwl/ColorUI</a></p>
+<!--more--->
+
+<h2 id="Vant-组件库"><a href="#Vant-组件库" class="headerlink" title="Vant 组件库"></a>Vant 组件库</h2><p>Vant 是由有赞发布的，轻量的小程序 UI 组件库。如果你想制作一款电商、餐饮、外卖平台、票务预订等购物类小程序，选用 Vant 是较为合适的。为什么这么说呢？</p>
+<p>首先，我们来看「业务组件」这一块。可以看到，「商品卡片」与「提交订单栏」两个组件可以构成一个基本的「购物车」页面；而「商品卡片」与「商品导航」二者又可以组成一个简单的商店页面。</p>
+<p>对开发者非常友好，文档可以说是事无巨细了，而且在文档右侧，还可以预览样式哦。</p>
+<p>开发文档：<a href="https://youzan.github.io/vant-weapp/#/intro">https://youzan.github.io/vant-weapp/#/intro</a><br>GitHub 地址：<a href="https://github.com/youzan/vant-weapp">https://github.com/youzan/vant-weapp</a></p>
+<p>​                                                 </p>
+<h2 id="iViewUI"><a href="#iViewUI" class="headerlink" title="iViewUI"></a>iViewUI</h2><p>iViewUI 是由 TalkingData 发布的组件库。作为一款好用的组件库，布局、面板、列表、表单、顶部导航栏、底部导航栏等组件当然必不可少，那么 iViewUI 除了具备这些标配的组件，还有哪些亮点呢？</p>
+<p>iViewUI 同样有详细的文档，但是不支持网页预览，只能打开小程序预览。</p>
+<p>开发文档：<a href="https://weapp.iviewui.com/docs/guide/start">https://weapp.iviewui.com/docs/guide/start</a><br>GitHub 地址：<a href="https://github.com/TalkingData/iview-weapp">https://github.com/TalkingData/iview-weapp</a></p>
+<h2 id="ZanUI-WeApp"><a href="#ZanUI-WeApp" class="headerlink" title="ZanUI WeApp"></a>ZanUI WeApp</h2><p>ZanUI WeApp是有赞移动 Web UI 规范 ZanUI 的小程序实现版本，结合了微信的视觉规范，为用户提供更加统一的使用感受。</p>
+<p>现已包含 badge、btn、card、cell、dialog、icon、label、noticebar、panel、popup、switch、tab、toast、tooltips 等组件或元素。</p>
+<p>GitHub地址：<a href="https://github.com/youzan/zanui-weapp">https://github.com/youzan/zanui-weapp</a><br>npm下载：npm i zanui-weapp</p>
+<p>另外，ZanUI也使用mpvue重写了zanui-weapp，实现了其中所有组件，为使用mpvue的开发者提供了方便。</p>
+<p>GitHub地址：<a href="https://github.com/samwang1027/mpvue-zanui">https://github.com/samwang1027/mpvue-zanui</a><br>npm下载：npm i mpvue-zanui</p>
+<h2 id="MinUI"><a href="#MinUI" class="headerlink" title="MinUI"></a>MinUI</h2><p>MinUI 是蘑菇街前端开发团队开发的基于微信小程序自定义组件特性开发而成的一套简洁、易用、高效的组件库，适用场景广，覆盖小程序原生框架，各种小程序组件主流框架等，并且提供了专门的命令行工具。</p>
+<p>GitHub地址：<a href="https://github.com/meili/minui">https://github.com/meili/minui</a></p>
+<h2 id="vux"><a href="#vux" class="headerlink" title="vux"></a>vux</h2><p>基于webpack + vue-loader + vux可以快速开发移动端页面，配合vux-loader方便你在WeUI的基础上定制需要的样式。</p>
+<p>vux-loader保证了组件按需使用，因此不用担心最终打包了整个vux的组件库代码。</p>
+<p>VUX并不完全依赖于WeUI，VUX 在 WeUI 的基础上扩展了多个常用组件，但是尽量保持整体UI样式接近WeUI的设计规范。</p>
+<p><a href="https://vux.li/demos/v2/?x-page=v2-doc-home#/demo">https://vux.li/demos/v2/?x-page=v2-doc-home#/demo</a></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>微信小程序</tag>
+        <tag>ui</tag>
       </tags>
   </entry>
   <entry>

@@ -81,73 +81,77 @@
 <p>Ctrl+6 ：六级标题</p>
 <p>Ctrl+0：段落</p>
 <h4 id="（2）粗体、斜体、删除线和下划线"><a href="#（2）粗体、斜体、删除线和下划线" class="headerlink" title="（2）粗体、斜体、删除线和下划线"></a>（2）粗体、斜体、删除线和下划线</h4><p>Markdown 语法：</p>
-<ul>
-<li><pre><code>*斜体*
-**粗体**
-***加粗斜体***
-~~删除线~~
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">Typora 快捷键：</span><br><span class="line"></span><br><span class="line">Ctrl+I：斜体</span><br><span class="line"></span><br><span class="line">Ctrl+B：粗体</span><br><span class="line"></span><br><span class="line">Ctrl+U：下划线</span><br><span class="line"></span><br><span class="line">Alt+Shift+5：删除线</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--more--&gt;</span> </span><br><span class="line"></span><br><span class="line">#### （3）引用块</span><br><span class="line"></span><br><span class="line">Markdown 语法：</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-&gt; &gt; 文字引用
-&gt; <figure class="highlight clean"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">Typora 快捷键： Ctrl+Shift+Q</span><br><span class="line"></span><br><span class="line">#### （<span class="number">4</span>）代码块</span><br><span class="line"></span><br><span class="line">Markdown 语法：</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-`行内代码`
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-​```
-多行代码
-多行代码
-​```
-<figure class="highlight clean"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">Typora 快捷键：</span><br><span class="line"></span><br><span class="line">行内代码：Ctrl+Shift+`</span><br><span class="line"></span><br><span class="line">多行代码：Ctrl+Shift+K</span><br><span class="line"></span><br><span class="line">#### （<span class="number">5</span>）公式块</span><br><span class="line"></span><br><span class="line">Markdown 语法：</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-$$
-数学公式
-$$
-<figure class="highlight clean"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">Typora 快捷键： Ctrl+Shift+M</span><br><span class="line"></span><br><span class="line">#### （<span class="number">6</span>）分割线</span><br><span class="line"></span><br><span class="line">Markdown 语法：</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-方法一：---
-</code></pre>
-</li>
-</ul>
-<p>方法二：+++</p>
-<p>方法三：***</p>
-<figure class="highlight clean"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">#### （<span class="number">7</span>）列表</span><br><span class="line"></span><br><span class="line">Markdown 语法：        </span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>1.有序列表项</p>
-<ul>
-<li>无序列表项</li>
-</ul>
-<ul>
-<li>无序列表项</li>
-</ul>
-<ul>
-<li>无序列表项<figure class="highlight clean"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">Typora 快捷键：</span><br><span class="line"></span><br><span class="line">有序列表项：Ctrl+Shift+[</span><br><span class="line"></span><br><span class="line">无序列表项：Ctrl+Shift+]</span><br><span class="line"></span><br><span class="line">#### （<span class="number">8</span>）表格</span><br><span class="line"></span><br><span class="line">Markdown 语法：</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>表头1</th>
-<th>表头2</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>内容11</td>
-<td>内容12</td>
-</tr>
-<tr>
-<td>内容21</td>
-<td>内容22</td>
-</tr>
-</tbody></table>
-<figure class="highlight clean"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">Typora 快捷键： Ctrl+T</span><br><span class="line"></span><br><span class="line">#### （<span class="number">9</span>）超链接</span><br><span class="line"></span><br><span class="line">Markdown语法：</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-方法一：<a href="%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80" title="链接描述">链接文字</a><br>例如：<a href="https://www.example.com/" title="示例链接">示例链接</a></li>
-</ul>
-<p>方法二：&lt;链接地址&gt;<br>例如：<a href="https://www.example.com/">https://www.example.com/</a></p>
-<figure class="highlight clean"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">Typora快捷键： Ctrl+K</span><br><span class="line"></span><br><span class="line">#### （<span class="number">10</span>）图片</span><br><span class="line"></span><br><span class="line">Markdown语法：</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="/2021/12/20/Hexo%E7%9A%84%E4%B9%A6%E5%86%99%E5%92%8C%E4%BD%BF%E7%94%A8/%E5%9B%BE%E7%89%87%E5%9C%B0%E5%9D%80" alt="图片文字" title="图片描述"></p>
-<p>例如：<img src="https://www.example.com/example.PNG" alt="示例图片" title="示例图片"></p>
-<figure class="highlight autohotkey"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">Typora快捷键： Ctrl+Shift+I</span><br><span class="line"></span><br><span class="line">![可爱](Hexo的书写和使用/<span class="number">42750</span>.jpg)</span><br><span class="line"></span><br><span class="line">说明：在 Hexo中 插入图片时，请按照以下的步骤进行设置</span><br><span class="line"></span><br><span class="line">将 站点配置文件 中的 `post_asset_folder` 选项的值设置为 <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">在站点文件夹中打开 git bash，输入命令 `npm install hexo-asset-image --save` 安装插件</span><br><span class="line"></span><br><span class="line">这样，当使用 `hexo <span class="keyword">new</span> title` 创建文章时，将同时在 source/_post 文件夹中生成一个与 title 同名的文件夹，我们只需将图片放进此文件夹中，然后在文章中通过 Markdown 语法进行引用即可</span><br><span class="line"></span><br><span class="line">例如，在资源文件夹（就是那个与 title 同名的文件夹）中添加图片 example.PNG，则可以在对应的文章中使用语句 `![示例图片](title/example.PNG <span class="string">&quot;示例图片&quot;</span>)` 添加图片</span><br><span class="line"></span><br><span class="line">&lt;!--more--&gt; </span><br><span class="line"></span><br><span class="line">### <span class="number">3</span>、高级设置</span><br><span class="line"></span><br><span class="line">#### （<span class="number">1</span>）模板设置</span><br><span class="line"></span><br><span class="line">当我们使用命令 `hexo <span class="keyword">new</span> <span class="string">&quot;title&quot;</span>` 创建文章时，Hexo 会根据 /scaffolds/post.md 对新文章进行初始化</span><br><span class="line"></span><br><span class="line">换言之，/scaffolds/post.md 就是新文章的 模板，所以我们可以修改它来适应自己的写作习惯</span><br><span class="line"></span><br><span class="line">一个简单的示例如下：</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>title: Hexo的书写和使用<br>date: 1640001447000<br>tags:<br>categories: </p>
-<figure class="highlight clean"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">#### （<span class="number">2</span>）头部设置</span><br><span class="line"></span><br><span class="line">在每篇利用 Hexo 创建的文章的开头，都会有对文章进行说明的文字，叫做 文章头部</span><br><span class="line"></span><br><span class="line">文章的头部除了可以设置文章标题、发布日期等基础信息外，还可以为文章添加标签、分类等</span><br><span class="line"></span><br><span class="line">一个简单的示例如下：</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>title: Title<br>date: YYYY-MM-DD HH:MM:SS<br>tags: [tag1, tag2, …]<br>categories: category</p>
-<p>```</p>
+<figure class="highlight asciidoc"><table><tr><td class="code"><pre><span class="line"><span class="strong">*斜体*</span></span><br><span class="line"><span class="strong">**粗体**</span></span><br><span class="line"><span class="strong">***加粗斜体**</span>*</span><br><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure>
+
+<p>Typora 快捷键：</p>
+<p>Ctrl+I：斜体</p>
+<p>Ctrl+B：粗体</p>
+<p>Ctrl+U：下划线</p>
+<p>Alt+Shift+5：删除线</p>
+<span id="more"></span> 
+
+<h4 id="（3）引用块"><a href="#（3）引用块" class="headerlink" title="（3）引用块"></a>（3）引用块</h4><p>Markdown 语法：</p>
+<blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 文字引用</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>Typora 快捷键： Ctrl+Shift+Q</p>
+<h4 id="（4）代码块"><a href="#（4）代码块" class="headerlink" title="（4）代码块"></a>（4）代码块</h4><p>Markdown 语法：</p>
+<figure class="highlight arcade"><table><tr><td class="code"><pre><span class="line"><span class="string">`行内代码`</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight arcade"><table><tr><td class="code"><pre><span class="line">​<span class="string">``</span><span class="string">`</span></span><br><span class="line"><span class="string">多行代码</span></span><br><span class="line"><span class="string">多行代码</span></span><br><span class="line"><span class="string">​`</span><span class="string">``</span></span><br></pre></td></tr></table></figure>
+
+<p>Typora 快捷键：</p>
+<p>行内代码：Ctrl+Shift+`</p>
+<p>多行代码：Ctrl+Shift+K</p>
+<h4 id="（5）公式块"><a href="#（5）公式块" class="headerlink" title="（5）公式块"></a>（5）公式块</h4><p>Markdown 语法：</p>
+<figure class="highlight gams"><table><tr><td class="code"><pre><span class="line"><span class="symbol">$</span><span class="symbol">$</span></span><br><span class="line">数学公式</span><br><span class="line"><span class="symbol">$</span><span class="symbol">$</span></span><br></pre></td></tr></table></figure>
+
+<p>Typora 快捷键： Ctrl+Shift+M</p>
+<h4 id="（6）分割线"><a href="#（6）分割线" class="headerlink" title="（6）分割线"></a>（6）分割线</h4><p>Markdown 语法：</p>
+<figure class="highlight brainfuck"><table><tr><td class="code"><pre><span class="line"><span class="comment">方法一：</span>--<span class="literal">-</span></span><br><span class="line"></span><br><span class="line"><span class="comment">方法二：</span>++<span class="literal">+</span></span><br><span class="line"></span><br><span class="line"><span class="comment">方法三：***</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="（7）列表"><a href="#（7）列表" class="headerlink" title="（7）列表"></a>（7）列表</h4><p>Markdown 语法：        </p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">1.有序列表项</span><br><span class="line"></span><br><span class="line"><span class="bullet">*</span> 无序列表项</span><br><span class="line"></span><br><span class="line"><span class="bullet">+</span> 无序列表项</span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> 无序列表项</span><br></pre></td></tr></table></figure>
+
+
+<p>Typora 快捷键：</p>
+<p>有序列表项：Ctrl+Shift+[</p>
+<p>无序列表项：Ctrl+Shift+]</p>
+<h4 id="（8）表格"><a href="#（8）表格" class="headerlink" title="（8）表格"></a>（8）表格</h4><p>Markdown 语法：</p>
+<figure class="highlight gherkin"><table><tr><td class="code"><pre><span class="line">|<span class="string"> 表头1  </span>|<span class="string"> 表头2  </span>|</span><br><span class="line">|<span class="string"> ------ </span>|<span class="string"> ------ </span>|</span><br><span class="line">|<span class="string"> 内容11 </span>|<span class="string"> 内容12 </span>|</span><br><span class="line">|<span class="string"> 内容21 </span>|<span class="string"> 内容22 </span>|</span><br></pre></td></tr></table></figure>
+
+<p>Typora 快捷键： Ctrl+T</p>
+<h4 id="（9）超链接"><a href="#（9）超链接" class="headerlink" title="（9）超链接"></a>（9）超链接</h4><p>Markdown语法：</p>
+<figure class="highlight less"><table><tr><td class="code"><pre><span class="line">方法一：<span class="selector-attr">[链接文字]</span>(链接地址 <span class="string">&quot;链接描述&quot;</span>)</span><br><span class="line">例如：<span class="selector-attr">[示例链接]</span>(<span class="attribute">https</span>:<span class="comment">//www.example.com/ &quot;示例链接&quot;)</span></span><br><span class="line"></span><br><span class="line">方法二：&lt;链接地址&gt;</span><br><span class="line">例如：&lt;<span class="attribute">https</span>:<span class="comment">//www.example.com/&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<p>Typora快捷键： Ctrl+K</p>
+<h4 id="（10）图片"><a href="#（10）图片" class="headerlink" title="（10）图片"></a>（10）图片</h4><p>Markdown语法：</p>
+<figure class="highlight less"><table><tr><td class="code"><pre><span class="line">!<span class="selector-attr">[图片文字]</span>(图片地址 <span class="string">&quot;图片描述&quot;</span>)</span><br><span class="line"></span><br><span class="line">例如：!<span class="selector-attr">[示例图片]</span>(<span class="attribute">https</span>:<span class="comment">//www.example.com/example.PNG &quot;示例图片&quot;)</span></span><br></pre></td></tr></table></figure>
+
+<p>Typora快捷键： Ctrl+Shift+I</p>
+<p><img src="/2021/12/20/Hexo%E7%9A%84%E4%B9%A6%E5%86%99%E5%92%8C%E4%BD%BF%E7%94%A8/42750.jpg" alt="可爱"></p>
+<p>说明：在 Hexo中 插入图片时，请按照以下的步骤进行设置</p>
+<p>将 站点配置文件 中的 <code>post_asset_folder</code> 选项的值设置为 true</p>
+<p>在站点文件夹中打开 git bash，输入命令 <code>npm install hexo-asset-image --save</code> 安装插件</p>
+<p>这样，当使用 <code>hexo new title</code> 创建文章时，将同时在 source/_post 文件夹中生成一个与 title 同名的文件夹，我们只需将图片放进此文件夹中，然后在文章中通过 Markdown 语法进行引用即可</p>
+<p>例如，在资源文件夹（就是那个与 title 同名的文件夹）中添加图片 example.PNG，则可以在对应的文章中使用语句 <code>![示例图片](title/example.PNG &quot;示例图片&quot;)</code> 添加图片</p>
+<!--more--> 
+
+<h3 id="3、高级设置"><a href="#3、高级设置" class="headerlink" title="3、高级设置"></a>3、高级设置</h3><h4 id="（1）模板设置"><a href="#（1）模板设置" class="headerlink" title="（1）模板设置"></a>（1）模板设置</h4><p>当我们使用命令 <code>hexo new &quot;title&quot;</code> 创建文章时，Hexo 会根据 /scaffolds/post.md 对新文章进行初始化</p>
+<p>换言之，/scaffolds/post.md 就是新文章的 模板，所以我们可以修改它来适应自己的写作习惯</p>
+<p>一个简单的示例如下：</p>
+<figure class="highlight subunit"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line"><span class="keyword">tags:</span> </span><br><span class="line">categories: </span><br></pre></td></tr></table></figure>
+
+<h4 id="（2）头部设置"><a href="#（2）头部设置" class="headerlink" title="（2）头部设置"></a>（2）头部设置</h4><p>在每篇利用 Hexo 创建的文章的开头，都会有对文章进行说明的文字，叫做 文章头部</p>
+<p>文章的头部除了可以设置文章标题、发布日期等基础信息外，还可以为文章添加标签、分类等</p>
+<p>一个简单的示例如下：</p>
+<figure class="highlight subunit"><table><tr><td class="code"><pre><span class="line">title: Title</span><br><span class="line">date: YYYY-MM-DD HH:MM:SS</span><br><span class="line"><span class="keyword">tags:</span> [tag1, tag2, ...]</span><br><span class="line">categories: category</span><br></pre></td></tr></table></figure>
+
 <p>注意：属性和属性值之间必须有一个空格，否则会解析错误</p>
 <h4 id="（3）首页显示"><a href="#（3）首页显示" class="headerlink" title="（3）首页显示"></a>（3）首页显示</h4><p>在利用 Hexo 框架搭建的博客网站中，首页会显示文章的内容，且默认显示文章的全部内容</p>
 <p>如果当文章太长的时候就会显得十分冗余，所以我们有必要对其进行精简</p>
-<p>这时，我们只需在文章中使用 <span id="more"></span> 标志即可，表示只会显示标志前面的内容</p>
+<p>这时，我们只需在文章中使用 <!--more--> 标志即可，表示只会显示标志前面的内容</p>
 <h2 id="三、部署发布"><a href="#三、部署发布" class="headerlink" title="三、部署发布"></a>三、部署发布</h2><p>在站点文件夹中打开 git bash，输入如下命令部署和发布文章</p>
 <ul>
 <li>$ hexo g -d</li>
@@ -201,33 +205,6 @@ $$
       <tags>
         <tag>css</tag>
         <tag>兼容</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>get与post方法</title>
-    <url>/2021/03/01/get%E4%B8%8Epost%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="GET-和-POST-方法的区别："><a href="#GET-和-POST-方法的区别：" class="headerlink" title="GET 和 POST 方法的区别："></a><strong>GET 和 POST 方法的区别</strong>：</h1><h2 id="1、发送的数据数量"><a href="#1、发送的数据数量" class="headerlink" title="1、发送的数据数量"></a><strong>1、发送的数据数量</strong></h2><p>在 GET 中，只能发送有限数量的数据，因为数据是在 URL 中发送的。</p>
-<p>在 POST 中，可以发送大量的数据，因为数据是在正文主体中发送的。</p>
-<h2 id="2、安全性"><a href="#2、安全性" class="headerlink" title="2、安全性"></a><strong>2、安全性</strong></h2><p>GET 方法发送的数据不受保护，因为数据在 URL 栏中公开，这增加了漏洞和黑客攻击的风险。</p>
-<p>POST 方法发送的数据是安全的，因为数据未在 URL 栏中公开，还可以在其中使用多种编码技术，这使其具有弹性。</p>
-<p><img src="/2021/03/01/get%E4%B8%8Epost%E6%96%B9%E6%B3%95/4333.jpg" alt="get与post"></p>
-<h2 id="3、加入书签中"><a href="#3、加入书签中" class="headerlink" title="3、加入书签中"></a><strong>3、加入书签中</strong></h2><p>GET 查询的结果可以加入书签中，因为它以 URL 的形式存在；而 POST 查询的结果无法加入书签中。</p>
-<span id="more"></span>
-
-<h2 id="4、编码"><a href="#4、编码" class="headerlink" title="4、编码"></a><strong>4、编码</strong></h2><p>在表单中使用 GET 方法时，数据类型中只接受 ASCII 字符。</p>
-<p>在表单提交时，POST 方法不绑定表单数据类型，并允许二进制和 ASCII 字符。</p>
-<h2 id="5、可变大小"><a href="#5、可变大小" class="headerlink" title="5、可变大小"></a><strong>5、可变大小</strong></h2><p>GET 方法中的可变大小约为 2000 个字符。</p>
-<p>POST 方法最多允许 8 Mb 的可变大小。</p>
-<h2 id="6、缓存"><a href="#6、缓存" class="headerlink" title="6、缓存"></a><strong>6、缓存</strong></h2><p>GET 方法的数据是可缓存的，而 POST 方法的数据是无法缓存的。</p>
-<h2 id="7、主要作用"><a href="#7、主要作用" class="headerlink" title="7、主要作用"></a><strong>7、主要作用</strong></h2><p>GET 方法主要用于获取信息。而 POST 方法主要用于更新数据。</p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>jquery</tag>
-        <tag>Ajax</tag>
-        <tag>get,post</tag>
       </tags>
   </entry>
   <entry>
@@ -299,43 +276,30 @@ function fun(e){
       </tags>
   </entry>
   <entry>
-    <title>区分组件、api等</title>
-    <url>/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/</url>
-    <content><![CDATA[<h1 id="区别API、框架、插件、组件、控件等"><a href="#区别API、框架、插件、组件、控件等" class="headerlink" title="区别API、框架、插件、组件、控件等"></a>区别API、框架、插件、组件、控件等</h1><h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>概念</p>
-<p>　　提供给不同语言的一个<strong>接口</strong>，在对应函数内提供相应的<strong>方法</strong>（控制Windows各个部件的外观和行为的一套预先定义的Windows函数），只要用js语法调用想要的功能。例，js内BOM的screen方法。</p>
-<p>目的</p>
-<p>　　对底层的封装，将一些不会变化的东西封装一下，可以提高开发效率。</p>
-<p>API理解</p>
-<p>　　JS的api有很多的功能，只要知道有这样的东西，到时候直接去网上找调用的方法就可以了。例，百度地图的API。</p>
-<p> <img src="/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/2340.jpg" alt="区分"></p>
-<h2 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h2><p>将常用的方法进行封装，方便调取使用。但是也有各种各样的严格约束。比如bootstrap就是约束DOM结构的。麦当劳的桶</p>
-<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><p>嵌入式（MVC）：核心思想就是操作DOM。例如jQuery。</p>
-<p>渐进式（MVVM）：用到功能下载什么功能。</p>
-<ol>
-<li>Vue（中国尤大大开发的）</li>
-<li>Angular（微软公司）</li>
-<li>React（facebook公司）</li>
-</ol>
-<h3 id="框架与插件区别"><a href="#框架与插件区别" class="headerlink" title="框架与插件区别"></a>框架与插件区别</h3><p>框架相当于超大号的插件</p>
-<h2 id="库"><a href="#库" class="headerlink" title="库"></a>库</h2><p>只用引进来就能使用，jQuery其实也是一个库。</p>
+    <title>get与post方法</title>
+    <url>/2021/03/01/get%E4%B8%8Epost%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="GET-和-POST-方法的区别："><a href="#GET-和-POST-方法的区别：" class="headerlink" title="GET 和 POST 方法的区别："></a><strong>GET 和 POST 方法的区别</strong>：</h1><h2 id="1、发送的数据数量"><a href="#1、发送的数据数量" class="headerlink" title="1、发送的数据数量"></a><strong>1、发送的数据数量</strong></h2><p>在 GET 中，只能发送有限数量的数据，因为数据是在 URL 中发送的。</p>
+<p>在 POST 中，可以发送大量的数据，因为数据是在正文主体中发送的。</p>
+<h2 id="2、安全性"><a href="#2、安全性" class="headerlink" title="2、安全性"></a><strong>2、安全性</strong></h2><p>GET 方法发送的数据不受保护，因为数据在 URL 栏中公开，这增加了漏洞和黑客攻击的风险。</p>
+<p>POST 方法发送的数据是安全的，因为数据未在 URL 栏中公开，还可以在其中使用多种编码技术，这使其具有弹性。</p>
+<p><img src="/2021/03/01/get%E4%B8%8Epost%E6%96%B9%E6%B3%95/4333.jpg" alt="get与post"></p>
+<h2 id="3、加入书签中"><a href="#3、加入书签中" class="headerlink" title="3、加入书签中"></a><strong>3、加入书签中</strong></h2><p>GET 查询的结果可以加入书签中，因为它以 URL 的形式存在；而 POST 查询的结果无法加入书签中。</p>
 <span id="more"></span>
 
-<h3 id="库和框架的区别"><a href="#库和框架的区别" class="headerlink" title="库和框架的区别"></a>库和框架的区别</h3><p>库：麦当劳的套餐。</p>
-<p>框架：麦当劳的桶。</p>
-<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p>前人写好可提高自己代码质量及页面展现效果的js文件。</p>
-<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><p>一系列功能封装起来，包含某种特定的职能，目的在于可以<strong>复用</strong>。</p>
-<h3 id="组件和插件的区别"><a href="#组件和插件的区别" class="headerlink" title="组件和插件的区别"></a>组件和插件的区别</h3><p>组件是给jQuery添加新的全局函数，如$.ajax方法。提供某个完整功能的模块。<strong>类级别</strong> </p>
-<p>插件是给jQuery对象添加方法。封装某个功能方法的函数。<strong>对象级别</strong></p>
-<h2 id="控件"><a href="#控件" class="headerlink" title="控件"></a>控件</h2><p>用JS写好的功能块。比如网页上日期选择。</p>
+<h2 id="4、编码"><a href="#4、编码" class="headerlink" title="4、编码"></a><strong>4、编码</strong></h2><p>在表单中使用 GET 方法时，数据类型中只接受 ASCII 字符。</p>
+<p>在表单提交时，POST 方法不绑定表单数据类型，并允许二进制和 ASCII 字符。</p>
+<h2 id="5、可变大小"><a href="#5、可变大小" class="headerlink" title="5、可变大小"></a><strong>5、可变大小</strong></h2><p>GET 方法中的可变大小约为 2000 个字符。</p>
+<p>POST 方法最多允许 8 Mb 的可变大小。</p>
+<h2 id="6、缓存"><a href="#6、缓存" class="headerlink" title="6、缓存"></a><strong>6、缓存</strong></h2><p>GET 方法的数据是可缓存的，而 POST 方法的数据是无法缓存的。</p>
+<h2 id="7、主要作用"><a href="#7、主要作用" class="headerlink" title="7、主要作用"></a><strong>7、主要作用</strong></h2><p>GET 方法主要用于获取信息。而 POST 方法主要用于更新数据。</p>
 ]]></content>
       <categories>
         <category>前端</category>
       </categories>
       <tags>
-        <tag>API</tag>
-        <tag>组件</tag>
-        <tag>框架</tag>
-        <tag>库</tag>
+        <tag>jquery</tag>
+        <tag>Ajax</tag>
+        <tag>get,post</tag>
       </tags>
   </entry>
   <entry>
@@ -381,30 +345,6 @@ function fun(e){
       </tags>
   </entry>
   <entry>
-    <title>通俗理解回调函数</title>
-    <url>/2021/02/26/%E9%80%9A%E4%BF%97%E7%90%86%E8%A7%A3%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<p>我们先来看看回调的英文定义：</p>
-<p>A callback is a function that is passed as an argument to another function and is executed after its parent function has completed。</p>
-<p>字面上的理解，<strong>回调函数就是一个参数，将这个函数作为参数传到另一个函数里面，当那个函数执行完之后，再执行传进去的这个函数</strong>。这个过程就叫做回调。</p>
-<p>其实也很好理解对吧，回调，回调，就是回头调用的意思。主函数的事先干完，回头再调用传进来的那个函数。但是以前看过很多博客，他们总是将回调函数解释的云里雾里，很高深的样子。</p>
-<p>​                                   <img src="/2021/02/26/%E9%80%9A%E4%BF%97%E7%90%86%E8%A7%A3%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/9657.jpg" alt="简单理解"></p>
-<p>　　举一个别人举过的例子：约会结束后你送你女朋友回家，离别时，你肯定会说：“到家了给我发条信息，我很担心你。” 对不，然后你女朋友回家以后还真给你发了条信息。小伙子，你有戏了。其实这就是一个回调的过程。你留了个参数函数（要求女朋友给你发条信息）给你女朋友，然后你女朋友回家，回家的动作是主函数。她必须先回到家以后，主函数执行完了，再执行传进去的函数，然后你就收到一条信息了。</p>
-<p>　　现在基本理解回调函数的意思了吧。不理解的话没关系，我们用代码说话。</p>
-<p>​          <span id="more"></span></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//定义主函数，回调函数作为参数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">A</span>(<span class="params">callback</span>) </span>&#123;</span><br><span class="line">    callback();  </span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;我是主函数&#x27;</span>);      </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//定义回调函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">B</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="string">&quot;console.log(&#x27;我是回调函数&#x27;)&quot;</span>, <span class="number">3000</span>);<span class="comment">//模仿耗时操作  </span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//调用主函数，将函数B传进去</span></span><br><span class="line">A(B);</span><br><span class="line"></span><br><span class="line"><span class="comment">//输出结果</span></span><br><span class="line">我是主函数</span><br><span class="line">我是回调函数</span><br></pre></td></tr></table></figure>
-
-<p>上面的代码中，我们先定义了主函数和回调函数，然后再去调用主函数，将回调函数传进去。</p>
-<p>　　定义主函数的时候，我们让代码先去执行callback()回调函数，但输出结果却是后输出回调函数的内容。这就说明了主函数不用等待回调函数执行完，可以接着执行自己的代码。所以一般回调函数都用在耗时操作上面。比如ajax请求，比如处理文件等。</p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>javascript</tag>
-        <tag>回调函数</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>理解异步</title>
     <url>/2021/02/28/%E7%90%86%E8%A7%A3%E5%BC%82%E6%AD%A5/</url>
     <content><![CDATA[<h1 id="异步初步了解："><a href="#异步初步了解：" class="headerlink" title="异步初步了解："></a><strong>异步初步了解：</strong></h1><p>es6中碰到关于异步的问题，异步这个词自己知道是个什么意思，但是要我用代码解释出来的话…..有点难理解。所以接下来慢慢整理了一些异步的知识如下：</p>
@@ -436,6 +376,70 @@ function fun(e){
       </categories>
       <tags>
         <tag>异步</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>区分组件、api等</title>
+    <url>/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/</url>
+    <content><![CDATA[<h1 id="区别API、框架、插件、组件、控件等"><a href="#区别API、框架、插件、组件、控件等" class="headerlink" title="区别API、框架、插件、组件、控件等"></a>区别API、框架、插件、组件、控件等</h1><h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>概念</p>
+<p>　　提供给不同语言的一个<strong>接口</strong>，在对应函数内提供相应的<strong>方法</strong>（控制Windows各个部件的外观和行为的一套预先定义的Windows函数），只要用js语法调用想要的功能。例，js内BOM的screen方法。</p>
+<p>目的</p>
+<p>　　对底层的封装，将一些不会变化的东西封装一下，可以提高开发效率。</p>
+<p>API理解</p>
+<p>　　JS的api有很多的功能，只要知道有这样的东西，到时候直接去网上找调用的方法就可以了。例，百度地图的API。</p>
+<p> <img src="/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/2340.jpg" alt="区分"></p>
+<h2 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h2><p>将常用的方法进行封装，方便调取使用。但是也有各种各样的严格约束。比如bootstrap就是约束DOM结构的。麦当劳的桶</p>
+<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><p>嵌入式（MVC）：核心思想就是操作DOM。例如jQuery。</p>
+<p>渐进式（MVVM）：用到功能下载什么功能。</p>
+<ol>
+<li>Vue（中国尤大大开发的）</li>
+<li>Angular（微软公司）</li>
+<li>React（facebook公司）</li>
+</ol>
+<h3 id="框架与插件区别"><a href="#框架与插件区别" class="headerlink" title="框架与插件区别"></a>框架与插件区别</h3><p>框架相当于超大号的插件</p>
+<h2 id="库"><a href="#库" class="headerlink" title="库"></a>库</h2><p>只用引进来就能使用，jQuery其实也是一个库。</p>
+<span id="more"></span>
+
+<h3 id="库和框架的区别"><a href="#库和框架的区别" class="headerlink" title="库和框架的区别"></a>库和框架的区别</h3><p>库：麦当劳的套餐。</p>
+<p>框架：麦当劳的桶。</p>
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p>前人写好可提高自己代码质量及页面展现效果的js文件。</p>
+<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><p>一系列功能封装起来，包含某种特定的职能，目的在于可以<strong>复用</strong>。</p>
+<h3 id="组件和插件的区别"><a href="#组件和插件的区别" class="headerlink" title="组件和插件的区别"></a>组件和插件的区别</h3><p>组件是给jQuery添加新的全局函数，如$.ajax方法。提供某个完整功能的模块。<strong>类级别</strong> </p>
+<p>插件是给jQuery对象添加方法。封装某个功能方法的函数。<strong>对象级别</strong></p>
+<h2 id="控件"><a href="#控件" class="headerlink" title="控件"></a>控件</h2><p>用JS写好的功能块。比如网页上日期选择。</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>API</tag>
+        <tag>组件</tag>
+        <tag>框架</tag>
+        <tag>库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>通俗理解回调函数</title>
+    <url>/2021/02/26/%E9%80%9A%E4%BF%97%E7%90%86%E8%A7%A3%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p>我们先来看看回调的英文定义：</p>
+<p>A callback is a function that is passed as an argument to another function and is executed after its parent function has completed。</p>
+<p>字面上的理解，<strong>回调函数就是一个参数，将这个函数作为参数传到另一个函数里面，当那个函数执行完之后，再执行传进去的这个函数</strong>。这个过程就叫做回调。</p>
+<p>其实也很好理解对吧，回调，回调，就是回头调用的意思。主函数的事先干完，回头再调用传进来的那个函数。但是以前看过很多博客，他们总是将回调函数解释的云里雾里，很高深的样子。</p>
+<p>​                                   <img src="/2021/02/26/%E9%80%9A%E4%BF%97%E7%90%86%E8%A7%A3%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/9657.jpg" alt="简单理解"></p>
+<p>　　举一个别人举过的例子：约会结束后你送你女朋友回家，离别时，你肯定会说：“到家了给我发条信息，我很担心你。” 对不，然后你女朋友回家以后还真给你发了条信息。小伙子，你有戏了。其实这就是一个回调的过程。你留了个参数函数（要求女朋友给你发条信息）给你女朋友，然后你女朋友回家，回家的动作是主函数。她必须先回到家以后，主函数执行完了，再执行传进去的函数，然后你就收到一条信息了。</p>
+<p>　　现在基本理解回调函数的意思了吧。不理解的话没关系，我们用代码说话。</p>
+<p>​          <span id="more"></span></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//定义主函数，回调函数作为参数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">A</span>(<span class="params">callback</span>) </span>&#123;</span><br><span class="line">    callback();  </span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;我是主函数&#x27;</span>);      </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//定义回调函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">B</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="string">&quot;console.log(&#x27;我是回调函数&#x27;)&quot;</span>, <span class="number">3000</span>);<span class="comment">//模仿耗时操作  </span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//调用主函数，将函数B传进去</span></span><br><span class="line">A(B);</span><br><span class="line"></span><br><span class="line"><span class="comment">//输出结果</span></span><br><span class="line">我是主函数</span><br><span class="line">我是回调函数</span><br></pre></td></tr></table></figure>
+
+<p>上面的代码中，我们先定义了主函数和回调函数，然后再去调用主函数，将回调函数传进去。</p>
+<p>　　定义主函数的时候，我们让代码先去执行callback()回调函数，但输出结果却是后输出回调函数的内容。这就说明了主函数不用等待回调函数执行完，可以接着执行自己的代码。所以一般回调函数都用在耗时操作上面。比如ajax请求，比如处理文件等。</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+        <tag>回调函数</tag>
       </tags>
   </entry>
 </search>

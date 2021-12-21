@@ -41,7 +41,8 @@
 <p>基于 Markdown 语法的简洁性，它已经成为目前世界上最流行的用于书写博客的语言</p>
 <h3 id="2、Markdown-语法"><a href="#2、Markdown-语法" class="headerlink" title="2、Markdown 语法"></a>2、Markdown 语法</h3><p>在编写 Markdown 时，博主强烈的推荐给大家一款简洁易用的 Markdown 编辑器 —— Typora</p>
 <p>按照官方的说法就是 简单而强大，它不仅支持原生的语法，也支持对应的快捷键，更重要的是它还可以 实时预览</p>
-<p>这里附上 Typora 的下载地址：<a href="https://www.typora.io/%EF%BC%8C%E6%9C%89%E5%85%B4%E8%B6%A3%E7%9A%84%E6%9C%8B%E5%8F%8B%E5%8F%AF%E4%BB%A5%E4%B8%8B%E8%BD%BD%E6%9D%A5%E8%AF%95%E8%AF%95">https://www.typora.io/，有兴趣的朋友可以下载来试试</a></p>
+<p>这里附上 Typora 的下载地址：<a href="https://www.typora.io/">https://www.typora.io/</a></p>
+<p>有兴趣的朋友可以下载来试试</p>
 <p>好，下面开始进入正题，介绍一些常用的 Markdown 语法</p>
 <p><img src="/2021/12/20/Hexo%E7%9A%84%E4%B9%A6%E5%86%99%E5%92%8C%E4%BD%BF%E7%94%A8/8321.jpg" alt="美女"></p>
 <h4 id="（1）标题"><a href="#（1）标题" class="headerlink" title="（1）标题"></a>（1）标题</h4><p>Markdown 语法：</p>
@@ -155,29 +156,6 @@
       </tags>
   </entry>
   <entry>
-    <title>TodoList</title>
-    <url>/2021/03/02/TodoList/</url>
-    <content><![CDATA[<h1 id="TodoList代码-项目模块"><a href="#TodoList代码-项目模块" class="headerlink" title="TodoList代码-项目模块"></a>TodoList代码-项目模块</h1><!DOCTYPE html>
-
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span> <span class="attr">dir</span>=<span class="string">&quot;ltr&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;style.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;/font-awesome/css/font-awesome.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/jQuery/jquery-3.5.1.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">class</span>=<span class="string">&quot;txtb&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Add a task&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;notcomp&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">​    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>异常(Not Completed)<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;comp&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">​    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>正常(Completed)<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;ToDolist.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="/2021/03/02/TodoList/2007.jpg"></p>
-<span id="more"></span>
-
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&quot;montserrat&quot;</span>,sans-serif;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(<span class="number">120deg</span>,<span class="number">#487eb0</span>,<span class="number">#fbc531</span>);</span><br><span class="line">  <span class="attribute">min-height</span>: <span class="number">100vh</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">800px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: auto;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.txtb</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">border</span>: none;</span><br><span class="line">  <span class="attribute">border-bottom</span>: <span class="number">2px</span> solid <span class="number">#000</span>;</span><br><span class="line">  <span class="attribute">background</span>: none;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">outline</span>: none;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">18px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h3</span>&#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">10px</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.task</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0.5</span>);</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">18px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">6px</span> <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.task</span> <span class="selector-tag">i</span>&#123;</span><br><span class="line">  <span class="attribute">float</span>: right;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.comp</span> <span class="selector-class">.task</span>&#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,.<span class="number">5</span>);</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$(&quot;.txtb&quot;).on(&quot;keyup&quot;,function(e)&#123;</span><br><span class="line">  &#x2F;&#x2F;13  means enter button</span><br><span class="line">  if(e.keyCode &#x3D;&#x3D; 13 &amp;&amp; $(&quot;.txtb&quot;).val() !&#x3D; &quot;&quot;)</span><br><span class="line">  &#x2F;&#x2F; val返回表单字段的值</span><br><span class="line">  &#123;</span><br><span class="line">    var task &#x3D; $(&quot;&lt;div class&#x3D;&#39;task&#39;&gt;&lt;&#x2F;div&gt;&quot;).text($(&quot;.txtb&quot;).val());</span><br><span class="line">    var del &#x3D; $(&quot;&lt;i class&#x3D;&#39;fas fa-trash-alt&#39;&gt;&lt;&#x2F;i&gt;&quot;).click(function()</span><br><span class="line">    &#123;</span><br><span class="line">      var p &#x3D; $(this).parent();</span><br><span class="line">      p.fadeOut(function()&#123;</span><br><span class="line">        p.remove();</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line">    var check &#x3D; $(&quot;&lt;i class&#x3D;&#39;fas fa-check&#39;&gt;&lt;&#x2F;i&gt;&quot;).click(function()&#123;</span><br><span class="line">      var p &#x3D; $(this).parent();</span><br><span class="line">      p.fadeOut(function()&#123;</span><br><span class="line">        $(&quot;.comp&quot;).append(p);</span><br><span class="line">        p.fadeIn();</span><br><span class="line">      &#125;);</span><br><span class="line">      $(this).remove();</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    task.append(del,check);</span><br><span class="line">    $(&quot;.notcomp&quot;).append(task);</span><br><span class="line">      &#x2F;&#x2F;to clear the input</span><br><span class="line">    $(&quot;.txtb&quot;).val(&quot;&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>项目</category>
-      </categories>
-      <tags>
-        <tag>项目模块</tag>
-        <tag>代码</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>css初始化</title>
     <url>/2021/03/04/css%E5%88%9D%E5%A7%8B%E5%8C%96/</url>
     <content><![CDATA[<h1 id="初始化CSS"><a href="#初始化CSS" class="headerlink" title="初始化CSS"></a>初始化CSS</h1><p>建站老手都知道，这是为了考虑到浏览器的兼容问题，其实不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面差异。当然，初始化样式会对SEO有一定的影响，但鱼和熊掌不可兼得，但力求影响最小的情况下初始化。</p>
@@ -236,6 +214,29 @@
         <tag>jquery</tag>
         <tag>Ajax</tag>
         <tag>get,post</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TodoList</title>
+    <url>/2021/03/02/TodoList/</url>
+    <content><![CDATA[<h1 id="TodoList代码-项目模块"><a href="#TodoList代码-项目模块" class="headerlink" title="TodoList代码-项目模块"></a>TodoList代码-项目模块</h1><!DOCTYPE html>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span> <span class="attr">dir</span>=<span class="string">&quot;ltr&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;style.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;/font-awesome/css/font-awesome.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/jQuery/jquery-3.5.1.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">class</span>=<span class="string">&quot;txtb&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Add a task&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;notcomp&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">​    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>异常(Not Completed)<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;comp&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">​    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>正常(Completed)<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;ToDolist.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/03/02/TodoList/2007.jpg"></p>
+<span id="more"></span>
+
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&quot;montserrat&quot;</span>,sans-serif;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(<span class="number">120deg</span>,<span class="number">#487eb0</span>,<span class="number">#fbc531</span>);</span><br><span class="line">  <span class="attribute">min-height</span>: <span class="number">100vh</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">800px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: auto;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.txtb</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">border</span>: none;</span><br><span class="line">  <span class="attribute">border-bottom</span>: <span class="number">2px</span> solid <span class="number">#000</span>;</span><br><span class="line">  <span class="attribute">background</span>: none;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">outline</span>: none;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">18px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h3</span>&#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">10px</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.task</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0.5</span>);</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">18px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">6px</span> <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.task</span> <span class="selector-tag">i</span>&#123;</span><br><span class="line">  <span class="attribute">float</span>: right;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.comp</span> <span class="selector-class">.task</span>&#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,.<span class="number">5</span>);</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$(&quot;.txtb&quot;).on(&quot;keyup&quot;,function(e)&#123;</span><br><span class="line">  &#x2F;&#x2F;13  means enter button</span><br><span class="line">  if(e.keyCode &#x3D;&#x3D; 13 &amp;&amp; $(&quot;.txtb&quot;).val() !&#x3D; &quot;&quot;)</span><br><span class="line">  &#x2F;&#x2F; val返回表单字段的值</span><br><span class="line">  &#123;</span><br><span class="line">    var task &#x3D; $(&quot;&lt;div class&#x3D;&#39;task&#39;&gt;&lt;&#x2F;div&gt;&quot;).text($(&quot;.txtb&quot;).val());</span><br><span class="line">    var del &#x3D; $(&quot;&lt;i class&#x3D;&#39;fas fa-trash-alt&#39;&gt;&lt;&#x2F;i&gt;&quot;).click(function()</span><br><span class="line">    &#123;</span><br><span class="line">      var p &#x3D; $(this).parent();</span><br><span class="line">      p.fadeOut(function()&#123;</span><br><span class="line">        p.remove();</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line">    var check &#x3D; $(&quot;&lt;i class&#x3D;&#39;fas fa-check&#39;&gt;&lt;&#x2F;i&gt;&quot;).click(function()&#123;</span><br><span class="line">      var p &#x3D; $(this).parent();</span><br><span class="line">      p.fadeOut(function()&#123;</span><br><span class="line">        $(&quot;.comp&quot;).append(p);</span><br><span class="line">        p.fadeIn();</span><br><span class="line">      &#125;);</span><br><span class="line">      $(this).remove();</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    task.append(del,check);</span><br><span class="line">    $(&quot;.notcomp&quot;).append(task);</span><br><span class="line">      &#x2F;&#x2F;to clear the input</span><br><span class="line">    $(&quot;.txtb&quot;).val(&quot;&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>项目</category>
+      </categories>
+      <tags>
+        <tag>项目模块</tag>
+        <tag>代码</tag>
       </tags>
   </entry>
   <entry>
@@ -349,6 +350,40 @@ function fun(e){
       </tags>
   </entry>
   <entry>
+    <title>理解异步</title>
+    <url>/2021/02/28/%E7%90%86%E8%A7%A3%E5%BC%82%E6%AD%A5/</url>
+    <content><![CDATA[<h1 id="异步初步了解："><a href="#异步初步了解：" class="headerlink" title="异步初步了解："></a><strong>异步初步了解：</strong></h1><p>es6中碰到关于异步的问题，异步这个词自己知道是个什么意思，但是要我用代码解释出来的话…..有点难理解。所以接下来慢慢整理了一些异步的知识如下：</p>
+<h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><p>说到异步，肯定会联系出来它的兄弟–同步（Synchronous）。</p>
+<p>“同步模式”就是上一段的模式，<strong>后一个任务等待前一个任务结束，然后再执行</strong>，程序的执行顺序与任务的排列顺序是一致的、同步的.</p>
+<p>“异步模式”则完全不同，<strong>每一个任务有一个或多个回调函数（callback），前一个任务结束后，不是执行后一个任务，而是执行回调函数</strong>，后一个任务则是不等前一个任务结束就执行，所以程序的执行顺序与任务的排列顺序是不一致的、异步的。</p>
+<p>“异步模式”非常重要。在浏览器端，耗时很长的操作都应该异步执行，避免浏览器失去响应，最好的例子就是Ajax操作。</p>
+<img src="/2021/02/28/%E7%90%86%E8%A7%A3%E5%BC%82%E6%AD%A5/9300.jpg" alt="异步">
+
+<h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><p>介绍了理论，没啥用..直接用最直观的代码来体现吧：</p>
+<span id="more"></span>
+
+<body>
+       <button id="Button">展示异步操作</button>
+
+<pre><code>   &lt;script&gt;
+     var Button=document.getElementById(&#39;Button&#39;);
+     Button.onclick=function()&#123;
+         alert(&#39;展示异步操作--A&#39;);
+     &#125;
+     alert(&#39;展示异步操作--B&#39;);
+   &lt;/script&gt;
+</code></pre>
+<p>​     </p></body><br>这个简单的例子就体现出了异步和同步的区别了：<p></p>
+<p>平常写的代码，都是从上到下来执行的，一般上面的语句还没有执行结束的情况下，下面的语句是不会执行的，但是这段代码我们很容易测试出：先弹出B窗口，当你点击按钮的时候才开始弹出A窗口。 这就是典型的异步操作，不用等把上面的语句全部执行完才开始执行下面的语句。</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>异步</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>区分组件、api等</title>
     <url>/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/</url>
     <content><![CDATA[<h1 id="区别API、框架、插件、组件、控件等"><a href="#区别API、框架、插件、组件、控件等" class="headerlink" title="区别API、框架、插件、组件、控件等"></a>区别API、框架、插件、组件、控件等</h1><h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>概念</p>
@@ -386,40 +421,6 @@ function fun(e){
         <tag>组件</tag>
         <tag>框架</tag>
         <tag>库</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>理解异步</title>
-    <url>/2021/02/28/%E7%90%86%E8%A7%A3%E5%BC%82%E6%AD%A5/</url>
-    <content><![CDATA[<h1 id="异步初步了解："><a href="#异步初步了解：" class="headerlink" title="异步初步了解："></a><strong>异步初步了解：</strong></h1><p>es6中碰到关于异步的问题，异步这个词自己知道是个什么意思，但是要我用代码解释出来的话…..有点难理解。所以接下来慢慢整理了一些异步的知识如下：</p>
-<h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><p>说到异步，肯定会联系出来它的兄弟–同步（Synchronous）。</p>
-<p>“同步模式”就是上一段的模式，<strong>后一个任务等待前一个任务结束，然后再执行</strong>，程序的执行顺序与任务的排列顺序是一致的、同步的.</p>
-<p>“异步模式”则完全不同，<strong>每一个任务有一个或多个回调函数（callback），前一个任务结束后，不是执行后一个任务，而是执行回调函数</strong>，后一个任务则是不等前一个任务结束就执行，所以程序的执行顺序与任务的排列顺序是不一致的、异步的。</p>
-<p>“异步模式”非常重要。在浏览器端，耗时很长的操作都应该异步执行，避免浏览器失去响应，最好的例子就是Ajax操作。</p>
-<img src="/2021/02/28/%E7%90%86%E8%A7%A3%E5%BC%82%E6%AD%A5/9300.jpg" alt="异步">
-
-<h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><p>介绍了理论，没啥用..直接用最直观的代码来体现吧：</p>
-<span id="more"></span>
-
-<body>
-       <button id="Button">展示异步操作</button>
-
-<pre><code>   &lt;script&gt;
-     var Button=document.getElementById(&#39;Button&#39;);
-     Button.onclick=function()&#123;
-         alert(&#39;展示异步操作--A&#39;);
-     &#125;
-     alert(&#39;展示异步操作--B&#39;);
-   &lt;/script&gt;
-</code></pre>
-<p>​     </p></body><br>这个简单的例子就体现出了异步和同步的区别了：<p></p>
-<p>平常写的代码，都是从上到下来执行的，一般上面的语句还没有执行结束的情况下，下面的语句是不会执行的，但是这段代码我们很容易测试出：先弹出B窗口，当你点击按钮的时候才开始弹出A窗口。 这就是典型的异步操作，不用等把上面的语句全部执行完才开始执行下面的语句。</p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>异步</tag>
       </tags>
   </entry>
   <entry>

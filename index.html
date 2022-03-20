@@ -254,6 +254,130 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.weiqsctj.wang/2022/03/20/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="清时">
+      <meta itemprop="description" content="纵有千古，横有八荒，前途似海，来日方长">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="薇清时">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/03/20/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB-1/" class="post-title-link" itemprop="url">实习后对vue项目实战经验汇总</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-03-20 13:45:15 / 修改时间：13:53:43" itemprop="dateCreated datePublished" datetime="2022-03-20T13:45:15+08:00">2022-03-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index"><span itemprop="name">项目</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="实习后对vue项目实战经验汇总"><a href="#实习后对vue项目实战经验汇总" class="headerlink" title="实习后对vue项目实战经验汇总"></a><strong>实习后对vue项目实战经验汇总</strong></h1><h2 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h2><p>vue作为前端主流的3大框架之一，目前在国内有着非常广泛的应用，由于其轻量和自底向上的渐进式设计思想，对于PC端，移动端，桌面软件（electronjs）等也有广泛的应用。</p>
+<p>优秀的开源框架比如<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=elementUI&spm=1001.2101.3001.7020">elementUI</a>，iView， ant-design-vue等也极大的降低了开发者的开发成本，并极大的提高了开发效率。</p>
+<p><strong>饿了么</strong>的Mint UI，Element UI。</p>
+<p><strong>美团</strong>的mpVue。</p>
+<p><strong>京东</strong>的Nut UI，IView UI。</p>
+<p><strong>都是上手非常舒服的好的UI框架。</strong></p>
+<p><strong>贼好玩！！！极有成就感！！</strong></p>
+<p><strong>区别一下</strong></p>
+<p>移动端UI框架：vant ，cube UI ，Mint UI。</p>
+<p>pc端UI框架：mpVue ，element UI ，IView UI，nut UI 。</p>
+<p>微信小程序UI框架详情可以看本博客之前写的UI框架整理：<a href="weiqsctj.wang/2021/03/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fui%E7%BB%84%E4%BB%B6%E5%BA%93/">微信小程序ui组件库</a></p>
+<p>最初接触vue时是使用的elementUI，iview框架，亲自体会之后确实非常易用且强大。</p>
+<p><img src="/2022/03/20/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB-1/8715.jpg"></p>
+<p><strong>之前有了一段时间的vue项目上手经验，基于vue做过PC端项目，当然以后工作还是会积累很多vue相关的最佳实践和做一些基于vue的开源项目，所以说总结vue的项目经验我觉得是最好的成长，也希望给未来的自己一些阶段性的经验和思考。</strong></p>
+<p>总结一些vue使用踩过的一些坑和项目经验，更多的是使用框架（vue/react）过程中的方法论和组件的设计思路，最后还会有一些个人对vue工程化的一些总结。</p>
+<p><strong>特别提醒未来的自己：对javascript, css, html基础是要有相当一定的了解，但是，注意啊！！！千万不要钻牛角尖！</strong></p>
+<p><strong>因为</strong>会用框架不一定能很好的实现业务需求和功能，要想实现不同场景下不同复杂度的需求，所有一定要对web基础有充足的了解。</p>
+<h3 id="常用到的技术点-不要本本主义-："><a href="#常用到的技术点-不要本本主义-：" class="headerlink" title="常用到的技术点(不要本本主义)："></a><strong>常用到的技术点(不要本本主义)：</strong></h3><p>javascript：</p>
+<ul>
+<li>数组常用方法的使用，比如遍历有forEach，map，filter，every， some，reduce，操作方法有splice，slice， join，push，shift， pop，sort等</li>
+<li>基本数据结构，引用类型（对象，数组）</li>
+<li>基本逻辑运算if else， switch，三目运算：？，for/while循环等</li>
+<li>字符串常见api（如replace，slice， substr，indexOf）</li>
+<li>基本正则使用</li>
+<li>变量作用域，作用域链，变量提升，函数声明提升</li>
+<li>对象基本用法，面向对象编程</li>
+</ul>
+<p>css：</p>
+<ul>
+<li>基本盒模型（border/content/padding等）</li>
+<li>4种常用定位（static/absolute/relative/fixed）</li>
+<li>常用布局方式（浮动布局/弹性布局flex/自适应布局/网格布局grid）</li>
+<li>css3基本样式与动画（transition，animation）</li>
+</ul>
+<p>html：</p>
+<ul>
+<li>新标签基本用法和使用</li>
+<li>head标签作用与用法（主要是meta属性的用法）</li>
+</ul>
+<h2 id="1-vue框架使用注意事项和个人最佳体验"><a href="#1-vue框架使用注意事项和个人最佳体验" class="headerlink" title="1. vue框架使用注意事项和个人最佳体验"></a><strong>1. vue框架使用注意事项和个人最佳体验</strong></h2><blockquote>
+<p>vue学习最快的方式就是实践，然后不停地总结开发vue项目中的一些实践经验，才是正确道路，不宜求快，反而极大丧失对前端的兴趣，以至于心不定，容易怀疑自己从而转行，乐趣才是这一行最重要的东西。</p>
+<p>沉下去，好好玩与学，还远着呢……..</p>
+</blockquote>
+<h4 id="1-1-谈谈vue生命周期"><a href="#1-1-谈谈vue生命周期" class="headerlink" title="**1.1 谈谈vue生命周期"></a>**1.1 谈谈vue生命周期</h4>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/03/20/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB-1/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://www.weiqsctj.wang/2022/03/20/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -312,136 +436,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/03/20/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.weiqsctj.wang/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="清时">
-      <meta itemprop="description" content="纵有千古，横有八荒，前途似海，来日方长">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="薇清时">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/" class="post-title-link" itemprop="url">实习后对vue项目实战经验汇总</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2022-03-19 14:45:00" itemprop="dateCreated datePublished" datetime="2022-03-19T14:45:00+08:00">2022-03-19</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-03-20 10:47:36" itemprop="dateModified" datetime="2022-03-20T10:47:36+08:00">2022-03-20</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index"><span itemprop="name">项目</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="实习后对vue项目实战经验汇总"><a href="#实习后对vue项目实战经验汇总" class="headerlink" title="实习后对vue项目实战经验汇总"></a><strong>实习后对vue项目实战经验汇总</strong></h1><h2 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h2><p>vue作为前端主流的3大框架之一，目前在国内有着非常广泛的应用，由于其轻量和自底向上的渐进式设计思想，对于PC端，移动端，桌面软件（electronjs）等也有广泛的应用。</p>
-<p>优秀的开源框架比如<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=elementUI&spm=1001.2101.3001.7020">elementUI</a>，iView， ant-design-vue等也极大的降低了开发者的开发成本，并极大的提高了开发效率。</p>
-<p><strong>饿了么</strong>的Mint UI，Element UI。</p>
-<p><strong>美团</strong>的mpVue。</p>
-<p><strong>京东</strong>的Nut UI，IView UI。</p>
-<p><strong>都是上手非常舒服的好的UI框架。</strong></p>
-<p><strong>贼好玩！！！极有成就感！！</strong></p>
-<p><strong>区别一下</strong></p>
-<p>移动端UI框架：vant ，cube UI ，Mint UI。</p>
-<p>pc端UI框架：mpVue ，element UI ，IView UI，nut UI 。</p>
-<p>微信小程序UI框架详情可以看本博客之前写的UI框架整理：<a href="weiqsctj.wang/2021/03/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fui%E7%BB%84%E4%BB%B6%E5%BA%93/">微信小程序ui组件库</a></p>
-<p>最初接触vue时是使用的elementUI，iview框架，亲自体会之后确实非常易用且强大。</p>
-<p><img src="/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/8715.jpg"></p>
-<p><strong>之前有了一段时间的vue项目上手经验，基于vue做过PC端项目，当然以后工作还是会积累很多vue相关的最佳实践和做一些基于vue的开源项目，所以说总结vue的项目经验我觉得是最好的成长，也希望给未来的自己一些阶段性的经验和思考。</strong></p>
-<p>总结一些vue使用踩过的一些坑和项目经验，更多的是使用框架（vue/react）过程中的方法论和组件的设计思路，最后还会有一些个人对vue工程化的一些总结。</p>
-<p><strong>特别提醒未来的自己：对javascript, css, html基础是要有相当一定的了解，但是，注意啊！！！千万不要钻牛角尖！</strong></p>
-<p><strong>因为</strong>会用框架不一定能很好的实现业务需求和功能，要想实现不同场景下不同复杂度的需求，所有一定要对web基础有充足的了解。</p>
-<h3 id="常用到的技术点-不要本本主义-："><a href="#常用到的技术点-不要本本主义-：" class="headerlink" title="常用到的技术点(不要本本主义)："></a><strong>常用到的技术点(不要本本主义)：</strong></h3><p>javascript：</p>
-<ul>
-<li>数组常用方法的使用，比如遍历有forEach，map，filter，every， some，reduce，操作方法有splice，slice， join，push，shift， pop，sort等</li>
-<li>基本数据结构，引用类型（对象，数组）</li>
-<li>基本逻辑运算if else， switch，三目运算：？，for/while循环等</li>
-<li>字符串常见api（如replace，slice， substr，indexOf）</li>
-<li>基本正则使用</li>
-<li>变量作用域，作用域链，变量提升，函数声明提升</li>
-<li>对象基本用法，面向对象编程</li>
-</ul>
-<p>css：</p>
-<ul>
-<li>基本盒模型（border/content/padding等）</li>
-<li>4种常用定位（static/absolute/relative/fixed）</li>
-<li>常用布局方式（浮动布局/弹性布局flex/自适应布局/网格布局grid）</li>
-<li>css3基本样式与动画（transition，animation）</li>
-</ul>
-<p>html：</p>
-<ul>
-<li>新标签基本用法和使用</li>
-<li>head标签作用与用法（主要是meta属性的用法）</li>
-</ul>
-<h2 id="1-vue框架使用注意事项和个人最佳体验"><a href="#1-vue框架使用注意事项和个人最佳体验" class="headerlink" title="1. vue框架使用注意事项和个人最佳体验"></a><strong>1. vue框架使用注意事项和个人最佳体验</strong></h2><blockquote>
-<p>vue学习最快的方式就是实践，然后不停地总结开发vue项目中的一些实践经验，才是正确道路，不宜求快，反而极大丧失对前端的兴趣，以至于心不定，容易怀疑自己从而转行，乐趣才是这一行最重要的东西。</p>
-<p>沉下去，好好玩与学，还远着呢……..</p>
-</blockquote>
-<h4 id="1-1-谈谈vue生命周期"><a href="#1-1-谈谈vue生命周期" class="headerlink" title="**1.1 谈谈vue生命周期"></a>**1.1 谈谈vue生命周期</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>

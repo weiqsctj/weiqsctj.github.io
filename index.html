@@ -173,20 +173,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-count">27</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -245,6 +245,224 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.weiqsctj.wang/2022/03/20/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="清时">
+      <meta itemprop="description" content="纵有千古，横有八荒，前途似海，来日方长">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="薇清时">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/03/20/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">MySQL学习笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-03-20 10:54:05 / 修改时间：11:02:54" itemprop="dateCreated datePublished" datetime="2022-03-20T10:54:05+08:00">2022-03-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/MySQL/" itemprop="url" rel="index"><span itemprop="name">MySQL</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/MySQL/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="MySQL学习笔记"><a href="#MySQL学习笔记" class="headerlink" title="MySQL学习笔记"></a>MySQL学习笔记</h1><h2 id="登录和退出MySQL服务器"><a href="#登录和退出MySQL服务器" class="headerlink" title="登录和退出MySQL服务器"></a>登录和退出MySQL服务器</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 登录MySQL</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> mysql -u root -p12345612</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 退出MySQL数据库服务器</span></span><br><span class="line">exit;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/03/20/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/8726.jpg"></p>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">-- 显示所有数据库</span><br><span class="line">show databases;</span><br><span class="line"></span><br><span class="line">-- 创建数据库</span><br><span class="line">CREATE DATABASE test;</span><br><span class="line"></span><br><span class="line">-- 切换数据库</span><br><span class="line">use test;</span><br><span class="line"></span><br><span class="line">-- 显示数据库中的所有表</span><br><span class="line">show tables;</span><br><span class="line"></span><br><span class="line">-- 创建数据表</span><br><span class="line">CREATE TABLE pet (</span><br><span class="line">    name VARCHAR(20),</span><br><span class="line">    owner VARCHAR(20),</span><br><span class="line">    species VARCHAR(20),</span><br><span class="line">    sex CHAR(1),</span><br><span class="line">    birth DATE,</span><br><span class="line">    death DATE</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">-- 查看数据表结构</span><br><span class="line">-- describe pet;</span><br><span class="line">desc pet;</span><br><span class="line"></span><br><span class="line">-- 查询表</span><br><span class="line">SELECT * from pet;</span><br><span class="line"></span><br><span class="line">-- 插入数据</span><br><span class="line">INSERT INTO pet VALUES (&#39;puffball&#39;, &#39;Diane&#39;, &#39;hamster&#39;, &#39;f&#39;, &#39;1990-03-30&#39;, NULL);</span><br><span class="line"></span><br><span class="line">-- 修改数据</span><br><span class="line">UPDATE pet SET name &#x3D; &#39;squirrel&#39; where owner &#x3D; &#39;Diane&#39;;</span><br><span class="line"></span><br><span class="line">-- 删除数据</span><br><span class="line">DELETE FROM pet where name &#x3D; &#39;squirrel&#39;;</span><br><span class="line"></span><br><span class="line">-- 删除表</span><br><span class="line">DROP TABLE myorder;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/03/20/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.weiqsctj.wang/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="清时">
+      <meta itemprop="description" content="纵有千古，横有八荒，前途似海，来日方长">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="薇清时">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/" class="post-title-link" itemprop="url">实习后对vue项目实战经验汇总</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-03-19 14:45:00" itemprop="dateCreated datePublished" datetime="2022-03-19T14:45:00+08:00">2022-03-19</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-03-20 10:47:36" itemprop="dateModified" datetime="2022-03-20T10:47:36+08:00">2022-03-20</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index"><span itemprop="name">项目</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="实习后对vue项目实战经验汇总"><a href="#实习后对vue项目实战经验汇总" class="headerlink" title="实习后对vue项目实战经验汇总"></a><strong>实习后对vue项目实战经验汇总</strong></h1><h2 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h2><p>vue作为前端主流的3大框架之一，目前在国内有着非常广泛的应用，由于其轻量和自底向上的渐进式设计思想，对于PC端，移动端，桌面软件（electronjs）等也有广泛的应用。</p>
+<p>优秀的开源框架比如<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=elementUI&spm=1001.2101.3001.7020">elementUI</a>，iView， ant-design-vue等也极大的降低了开发者的开发成本，并极大的提高了开发效率。</p>
+<p><strong>饿了么</strong>的Mint UI，Element UI。</p>
+<p><strong>美团</strong>的mpVue。</p>
+<p><strong>京东</strong>的Nut UI，IView UI。</p>
+<p><strong>都是上手非常舒服的好的UI框架。</strong></p>
+<p><strong>贼好玩！！！极有成就感！！</strong></p>
+<p><strong>区别一下</strong></p>
+<p>移动端UI框架：vant ，cube UI ，Mint UI。</p>
+<p>pc端UI框架：mpVue ，element UI ，IView UI，nut UI 。</p>
+<p>微信小程序UI框架详情可以看本博客之前写的UI框架整理：<a href="weiqsctj.wang/2021/03/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fui%E7%BB%84%E4%BB%B6%E5%BA%93/">微信小程序ui组件库</a></p>
+<p>最初接触vue时是使用的elementUI，iview框架，亲自体会之后确实非常易用且强大。</p>
+<p><img src="/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/8715.jpg"></p>
+<p><strong>之前有了一段时间的vue项目上手经验，基于vue做过PC端项目，当然以后工作还是会积累很多vue相关的最佳实践和做一些基于vue的开源项目，所以说总结vue的项目经验我觉得是最好的成长，也希望给未来的自己一些阶段性的经验和思考。</strong></p>
+<p>总结一些vue使用踩过的一些坑和项目经验，更多的是使用框架（vue/react）过程中的方法论和组件的设计思路，最后还会有一些个人对vue工程化的一些总结。</p>
+<p><strong>特别提醒未来的自己：对javascript, css, html基础是要有相当一定的了解，但是，注意啊！！！千万不要钻牛角尖！</strong></p>
+<p><strong>因为</strong>会用框架不一定能很好的实现业务需求和功能，要想实现不同场景下不同复杂度的需求，所有一定要对web基础有充足的了解。</p>
+<h3 id="常用到的技术点-不要本本主义-："><a href="#常用到的技术点-不要本本主义-：" class="headerlink" title="常用到的技术点(不要本本主义)："></a><strong>常用到的技术点(不要本本主义)：</strong></h3><p>javascript：</p>
+<ul>
+<li>数组常用方法的使用，比如遍历有forEach，map，filter，every， some，reduce，操作方法有splice，slice， join，push，shift， pop，sort等</li>
+<li>基本数据结构，引用类型（对象，数组）</li>
+<li>基本逻辑运算if else， switch，三目运算：？，for/while循环等</li>
+<li>字符串常见api（如replace，slice， substr，indexOf）</li>
+<li>基本正则使用</li>
+<li>变量作用域，作用域链，变量提升，函数声明提升</li>
+<li>对象基本用法，面向对象编程</li>
+</ul>
+<p>css：</p>
+<ul>
+<li>基本盒模型（border/content/padding等）</li>
+<li>4种常用定位（static/absolute/relative/fixed）</li>
+<li>常用布局方式（浮动布局/弹性布局flex/自适应布局/网格布局grid）</li>
+<li>css3基本样式与动画（transition，animation）</li>
+</ul>
+<p>html：</p>
+<ul>
+<li>新标签基本用法和使用</li>
+<li>head标签作用与用法（主要是meta属性的用法）</li>
+</ul>
+<h2 id="1-vue框架使用注意事项和个人最佳体验"><a href="#1-vue框架使用注意事项和个人最佳体验" class="headerlink" title="1. vue框架使用注意事项和个人最佳体验"></a><strong>1. vue框架使用注意事项和个人最佳体验</strong></h2><blockquote>
+<p>vue学习最快的方式就是实践，然后不停地总结开发vue项目中的一些实践经验，才是正确道路，不宜求快，反而极大丧失对前端的兴趣，以至于心不定，容易怀疑自己从而转行，乐趣才是这一行最重要的东西。</p>
+<p>沉下去，好好玩与学，还远着呢……..</p>
+</blockquote>
+<h4 id="1-1-谈谈vue生命周期"><a href="#1-1-谈谈vue生命周期" class="headerlink" title="**1.1 谈谈vue生命周期"></a>**1.1 谈谈vue生命周期</h4>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -988,191 +1206,9 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.weiqsctj.wang/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="清时">
-      <meta itemprop="description" content="纵有千古，横有八荒，前途似海，来日方长">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="薇清时">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/" class="post-title-link" itemprop="url">区分组件、api等</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2021-02-27 15:27:27 / 修改时间：15:36:03" itemprop="dateCreated datePublished" datetime="2021-02-27T15:27:27+08:00">2021-02-27</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="区别API、框架、插件、组件、控件等"><a href="#区别API、框架、插件、组件、控件等" class="headerlink" title="区别API、框架、插件、组件、控件等"></a>区别API、框架、插件、组件、控件等</h1><h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>概念</p>
-<p>　　提供给不同语言的一个<strong>接口</strong>，在对应函数内提供相应的<strong>方法</strong>（控制Windows各个部件的外观和行为的一套预先定义的Windows函数），只要用js语法调用想要的功能。例，js内BOM的screen方法。</p>
-<p>目的</p>
-<p>　　对底层的封装，将一些不会变化的东西封装一下，可以提高开发效率。</p>
-<p>API理解</p>
-<p>　　JS的api有很多的功能，只要知道有这样的东西，到时候直接去网上找调用的方法就可以了。例，百度地图的API。</p>
-<p> <img src="/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/2340.jpg" alt="区分"></p>
-<h2 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h2><p>将常用的方法进行封装，方便调取使用。但是也有各种各样的严格约束。比如bootstrap就是约束DOM结构的。麦当劳的桶</p>
-<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><p>嵌入式（MVC）：核心思想就是操作DOM。例如jQuery。</p>
-<p>渐进式（MVVM）：用到功能下载什么功能。</p>
-<ol>
-<li>Vue（中国尤大大开发的）</li>
-<li>Angular（微软公司）</li>
-<li>React（facebook公司）</li>
-</ol>
-<h3 id="框架与插件区别"><a href="#框架与插件区别" class="headerlink" title="框架与插件区别"></a>框架与插件区别</h3><p>框架相当于超大号的插件</p>
-<h2 id="库"><a href="#库" class="headerlink" title="库"></a>库</h2><p>只用引进来就能使用，jQuery其实也是一个库。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/27/%E5%8C%BA%E5%88%86%E7%BB%84%E4%BB%B6%E3%80%81api%E7%AD%89/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.weiqsctj.wang/2021/02/26/%E9%80%9A%E4%BF%97%E7%90%86%E8%A7%A3%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="清时">
-      <meta itemprop="description" content="纵有千古，横有八荒，前途似海，来日方长">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="薇清时">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/02/26/%E9%80%9A%E4%BF%97%E7%90%86%E8%A7%A3%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/" class="post-title-link" itemprop="url">通俗理解回调函数</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2021-02-26 09:33:38 / 修改时间：11:30:10" itemprop="dateCreated datePublished" datetime="2021-02-26T09:33:38+08:00">2021-02-26</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>我们先来看看回调的英文定义：</p>
-<p>A callback is a function that is passed as an argument to another function and is executed after its parent function has completed。</p>
-<p>字面上的理解，<strong>回调函数就是一个参数，将这个函数作为参数传到另一个函数里面，当那个函数执行完之后，再执行传进去的这个函数</strong>。这个过程就叫做回调。</p>
-<p>其实也很好理解对吧，回调，回调，就是回头调用的意思。主函数的事先干完，回头再调用传进来的那个函数。但是以前看过很多博客，他们总是将回调函数解释的云里雾里，很高深的样子。</p>
-<p>​                                   <img src="/2021/02/26/%E9%80%9A%E4%BF%97%E7%90%86%E8%A7%A3%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/9657.jpg" alt="简单理解"></p>
-<p>　　举一个别人举过的例子：约会结束后你送你女朋友回家，离别时，你肯定会说：“到家了给我发条信息，我很担心你。” 对不，然后你女朋友回家以后还真给你发了条信息。小伙子，你有戏了。其实这就是一个回调的过程。你留了个参数函数（要求女朋友给你发条信息）给你女朋友，然后你女朋友回家，回家的动作是主函数。她必须先回到家以后，主函数执行完了，再执行传进去的函数，然后你就收到一条信息了。</p>
-<p>　　现在基本理解回调函数的意思了吧。不理解的话没关系，我们用代码说话。</p>
-<p>​</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/26/%E9%80%9A%E4%BF%97%E7%90%86%E8%A7%A3%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
 
 
 <script>
@@ -1205,7 +1241,7 @@
 
 <div class="copyright">
   &copy; 2020 – 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

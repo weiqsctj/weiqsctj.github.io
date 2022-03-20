@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.weiqsctj.wang","root":"/","images":"/images","scheme":"Muse","version":"8.2.1","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"slideDownBigOut"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta name="description" content="实习后对vue项目实战经验汇总序言vue作为前端主流的3大框架之一，目前在国内有着非常广泛的应用，由于其轻量和自底向上的渐进式设计思想，对于PC端，移动端，桌面软件（electronjs）等也有广泛的应用。 优秀的开源框架比如elementUI，iView， ant-design-vue等也极大的降低了开发者的开发成本，并极大的提高了开发效率。 饿了么的Mint UI，Element UI。 美团">
+<meta property="og:type" content="article">
+<meta property="og:title" content="实习后对vue项目实战经验汇总">
+<meta property="og:url" content="http://www.weiqsctj.wang/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/index.html">
+<meta property="og:site_name" content="薇清时">
+<meta property="og:description" content="实习后对vue项目实战经验汇总序言vue作为前端主流的3大框架之一，目前在国内有着非常广泛的应用，由于其轻量和自底向上的渐进式设计思想，对于PC端，移动端，桌面软件（electronjs）等也有广泛的应用。 优秀的开源框架比如elementUI，iView， ant-design-vue等也极大的降低了开发者的开发成本，并极大的提高了开发效率。 饿了么的Mint UI，Element UI。 美团">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://www.weiqsctj.wang/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/8715.jpg">
+<meta property="og:image" content="http://www.weiqsctj.wang/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/3a28.png">
+<meta property="og:image" content="http://www.weiqsctj.wang/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/4833.png">
+<meta property="og:image" content="http://www.weiqsctj.wang/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/35ae.png">
+<meta property="article:published_time" content="2022-03-19T06:45:00.000Z">
+<meta property="article:modified_time" content="2022-03-20T02:47:36.476Z">
+<meta property="article:author" content="清时">
+<meta property="article:tag" content="项目">
+<meta property="article:tag" content="vue">
+<meta property="article:tag" content="elementUI">
+<meta property="article:tag" content="实习">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.weiqsctj.wang/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/8715.jpg">
+
+
+<link rel="canonical" href="http://www.weiqsctj.wang/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>实习后对vue项目实战经验汇总 | 薇清时</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">薇清时</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">清时的博客</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB"><span class="nav-number">1.</span> <span class="nav-text">实习后对vue项目实战经验汇总</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%8F%E8%A8%80"><span class="nav-number">1.1.</span> <span class="nav-text">序言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%88%B0%E7%9A%84%E6%8A%80%E6%9C%AF%E7%82%B9-%E4%B8%8D%E8%A6%81%E6%9C%AC%E6%9C%AC%E4%B8%BB%E4%B9%89-%EF%BC%9A"><span class="nav-number">1.1.1.</span> <span class="nav-text">常用到的技术点(不要本本主义)：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-vue%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E5%92%8C%E4%B8%AA%E4%BA%BA%E6%9C%80%E4%BD%B3%E4%BD%93%E9%AA%8C"><span class="nav-number">1.2.</span> <span class="nav-text">1. vue框架使用注意事项和个人最佳体验</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-%E8%B0%88%E8%B0%88vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">**1.1 谈谈vue生命周期</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1-1-%E5%88%9B%E5%BB%BA%E5%89%8D-%E5%90%8E"><span class="nav-number">1.2.0.1.1.</span> <span class="nav-text">1.1.1 创建前&#x2F;后:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1-2-%E6%8C%82%E8%BD%BD%E5%89%8D-%E5%90%8E"><span class="nav-number">1.2.0.1.2.</span> <span class="nav-text">1.1.2 挂载前&#x2F;后</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1-3-%E6%9B%B4%E6%96%B0%E5%89%8D-%E5%90%8E"><span class="nav-number">1.2.0.1.3.</span> <span class="nav-text">1.1.3 更新前&#x2F;后</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1-4-%E9%94%80%E6%AF%81%E5%89%8D-%E5%90%8E"><span class="nav-number">1.2.0.1.4.</span> <span class="nav-text">1.1.4 销毁前&#x2F;后</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-vue%E5%B8%B8%E7%94%A8%E7%9A%84%E6%8C%87%E4%BB%A4%E4%BB%A5%E5%8F%8A%E5%8A%A8%E6%80%81%E6%8C%87%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">1.2 vue常用的指令以及动态指令的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-2-1-vue%E5%B8%B8%E7%94%A8%E7%9A%84%E6%8C%87%E4%BB%A4%EF%BC%9A"><span class="nav-number">1.2.0.2.1.</span> <span class="nav-text">1.2.1 vue常用的指令：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-vue%E5%B8%B8%E7%94%A8%E4%BF%AE%E9%A5%B0%E7%AC%A6%E5%8F%8A%E4%BD%9C%E7%94%A8"><span class="nav-number">1.2.0.3.</span> <span class="nav-text">1.3 vue常用修饰符及作用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="nav-number">1.2.0.3.1.</span> <span class="nav-text">事件修饰符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-%E8%A1%A8%E5%8D%95%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="nav-number">1.2.0.3.2.</span> <span class="nav-text">2. 表单修饰符</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-%E7%BB%84%E4%BB%B6%E9%97%B4-%E7%88%B6%E5%AD%90%E7%BB%84%E4%BB%B6%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1%E6%96%B9%E6%A1%88"><span class="nav-number">1.2.0.4.</span> <span class="nav-text">1.4 组件间-父子组件间的通信方案</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-vue%E5%AE%9E%E7%8E%B0%E6%8C%89%E9%9C%80%E5%8A%A0%E8%BD%BD%E7%BB%84%E4%BB%B6"><span class="nav-number">1.2.0.5.</span> <span class="nav-text">1.5 vue实现按需加载组件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-6-vuex%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B1%9E%E6%80%A7%E5%92%8C%E4%BD%9C%E7%94%A8%EF%BC%8C%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8vuex%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A8%A1%E5%BC%8F"><span class="nav-number">1.2.0.6.</span> <span class="nav-text">1.6 vuex的几种属性和作用，以及使用vuex的基本模式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#vuex%E5%90%84api%E6%A8%A1%E5%BC%8F%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E4%BD%9C%E7%94%A8"><span class="nav-number">1.2.0.6.1.</span> <span class="nav-text">vuex各api模式的概念和作用:</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-7-vue-router%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%A8%A1%E5%BC%8F%E5%92%8C%E5%AF%BC%E8%88%AA%E9%92%A9%E5%AD%90%E7%9A%84%E7%94%A8%E6%B3%95%E5%8F%8A%E4%BD%9C%E7%94%A8"><span class="nav-number">1.2.0.7.</span> <span class="nav-text">1.7 vue-router基本使用模式和导航钩子的用法及作用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-8-vue%E4%B8%AD%E6%A3%80%E6%B5%8B%E5%8F%98%E5%8C%96%E7%9A%84%E6%B3%A8%E6%84%8F%E7%82%B9"><span class="nav-number">1.2.0.8.</span> <span class="nav-text">1.8 vue中检测变化的注意点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-9-%E5%AF%B9%E6%8C%87%E5%AE%9A%E9%A1%B5%E9%9D%A2%E4%BD%BF%E7%94%A8keep-alive%E5%86%85%E7%BD%AE%E7%BB%84%E4%BB%B6%E8%B7%AF%E7%94%B1%E7%BC%93%E5%AD%98"><span class="nav-number">1.2.0.9.</span> <span class="nav-text">1.9 对指定页面使用keep-alive内置组件路由缓存</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%80%9A%E8%BF%87%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%92%8Crouter-view%E8%AE%BE%E7%BD%AE%EF%BC%9A%E8%B7%AF%E7%94%B1%E8%A7%86%E5%9B%BE%E9%85%8D%E7%BD%AE%EF%BC%9A"><span class="nav-number">1.2.0.9.1.</span> <span class="nav-text">通过路由配置文件和router-view设置：路由视图配置：</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-vue%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93"><span class="nav-number">1.3.</span> <span class="nav-text">2. vue项目配置经验总结</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="清时"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">清时</p>
+  <div class="site-description" itemprop="description">纵有千古，横有八荒，前途似海，来日方长</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/weiqsctj" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;weiqsctj" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:weiqsctj@126.com" title="E-Mail → mailto:weiqsctj@126.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/images/wechat_channel.jpg" title="微信公众号 → &#x2F;images&#x2F;wechat_channel.jpg"><i class="fab fa-weixin fa-fw"></i>微信公众号</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/tian-yuan-60-19-35" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;tian-yuan-60-19-35" rel="noopener" target="_blank"><i class="fab fa-zhihu fa-fw"></i>知乎</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      赞助商链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.weiqsctj.wang/" title="https:&#x2F;&#x2F;www.weiqsctj.wang&#x2F;">清时的博客</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/weiqsctj" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.weiqsctj.wang/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="清时">
+      <meta itemprop="description" content="纵有千古，横有八荒，前途似海，来日方长">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="薇清时">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          实习后对vue项目实战经验汇总
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-03-19 14:45:00" itemprop="dateCreated datePublished" datetime="2022-03-19T14:45:00+08:00">2022-03-19</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-03-20 10:47:36" itemprop="dateModified" datetime="2022-03-20T10:47:36+08:00">2022-03-20</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index"><span itemprop="name">项目</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="实习后对vue项目实战经验汇总"><a href="#实习后对vue项目实战经验汇总" class="headerlink" title="实习后对vue项目实战经验汇总"></a><strong>实习后对vue项目实战经验汇总</strong></h1><h2 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h2><p>vue作为前端主流的3大框架之一，目前在国内有着非常广泛的应用，由于其轻量和自底向上的渐进式设计思想，对于PC端，移动端，桌面软件（electronjs）等也有广泛的应用。</p>
+<p>优秀的开源框架比如<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=elementUI&spm=1001.2101.3001.7020">elementUI</a>，iView， ant-design-vue等也极大的降低了开发者的开发成本，并极大的提高了开发效率。</p>
+<p><strong>饿了么</strong>的Mint UI，Element UI。</p>
+<p><strong>美团</strong>的mpVue。</p>
+<p><strong>京东</strong>的Nut UI，IView UI。</p>
+<p><strong>都是上手非常舒服的好的UI框架。</strong></p>
+<p><strong>贼好玩！！！极有成就感！！</strong></p>
+<p><strong>区别一下</strong></p>
+<p>移动端UI框架：vant ，cube UI ，Mint UI。</p>
+<p>pc端UI框架：mpVue ，element UI ，IView UI，nut UI 。</p>
+<p>微信小程序UI框架详情可以看本博客之前写的UI框架整理：<a href="weiqsctj.wang/2021/03/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8Fui%E7%BB%84%E4%BB%B6%E5%BA%93/">微信小程序ui组件库</a></p>
+<p>最初接触vue时是使用的elementUI，iview框架，亲自体会之后确实非常易用且强大。</p>
+<p><img src="/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/8715.jpg"></p>
+<p><strong>之前有了一段时间的vue项目上手经验，基于vue做过PC端项目，当然以后工作还是会积累很多vue相关的最佳实践和做一些基于vue的开源项目，所以说总结vue的项目经验我觉得是最好的成长，也希望给未来的自己一些阶段性的经验和思考。</strong></p>
+<p>总结一些vue使用踩过的一些坑和项目经验，更多的是使用框架（vue/react）过程中的方法论和组件的设计思路，最后还会有一些个人对vue工程化的一些总结。</p>
+<p><strong>特别提醒未来的自己：对javascript, css, html基础是要有相当一定的了解，但是，注意啊！！！千万不要钻牛角尖！</strong></p>
+<p><strong>因为</strong>会用框架不一定能很好的实现业务需求和功能，要想实现不同场景下不同复杂度的需求，所有一定要对web基础有充足的了解。</p>
+<h3 id="常用到的技术点-不要本本主义-："><a href="#常用到的技术点-不要本本主义-：" class="headerlink" title="常用到的技术点(不要本本主义)："></a><strong>常用到的技术点(不要本本主义)：</strong></h3><p>javascript：</p>
+<ul>
+<li>数组常用方法的使用，比如遍历有forEach，map，filter，every， some，reduce，操作方法有splice，slice， join，push，shift， pop，sort等</li>
+<li>基本数据结构，引用类型（对象，数组）</li>
+<li>基本逻辑运算if else， switch，三目运算：？，for/while循环等</li>
+<li>字符串常见api（如replace，slice， substr，indexOf）</li>
+<li>基本正则使用</li>
+<li>变量作用域，作用域链，变量提升，函数声明提升</li>
+<li>对象基本用法，面向对象编程</li>
+</ul>
+<p>css：</p>
+<ul>
+<li>基本盒模型（border/content/padding等）</li>
+<li>4种常用定位（static/absolute/relative/fixed）</li>
+<li>常用布局方式（浮动布局/弹性布局flex/自适应布局/网格布局grid）</li>
+<li>css3基本样式与动画（transition，animation）</li>
+</ul>
+<p>html：</p>
+<ul>
+<li>新标签基本用法和使用</li>
+<li>head标签作用与用法（主要是meta属性的用法）</li>
+</ul>
+<h2 id="1-vue框架使用注意事项和个人最佳体验"><a href="#1-vue框架使用注意事项和个人最佳体验" class="headerlink" title="1. vue框架使用注意事项和个人最佳体验"></a><strong>1. vue框架使用注意事项和个人最佳体验</strong></h2><blockquote>
+<p>vue学习最快的方式就是实践，然后不停地总结开发vue项目中的一些实践经验，才是正确道路，不宜求快，反而极大丧失对前端的兴趣，以至于心不定，容易怀疑自己从而转行，乐趣才是这一行最重要的东西。</p>
+<p>沉下去，好好玩与学，还远着呢……..</p>
+</blockquote>
+<h4 id="1-1-谈谈vue生命周期"><a href="#1-1-谈谈vue生命周期" class="headerlink" title="**1.1 谈谈vue生命周期"></a>**1.1 谈谈vue生命周期</h4> <span id="more"></span>
+
+<p><img src="/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/3a28.png" alt="vue生命周期"></p>
+<p><strong>vue官网上的生命周期的方法:</strong> 大致划分一下分为创建前/后，挂载前/后，更新前/后，销毁前/后这四个阶段。</p>
+<p>各个阶段的状态总结如下：</p>
+<h5 id="1-1-1-创建前-后"><a href="#1-1-1-创建前-后" class="headerlink" title="1.1.1 创建前/后:"></a>1.1.1 <strong>创建前/后</strong>:</h5><ul>
+<li><p>beforeCreate：在beforeCreate生命周期执行时，data和methods中的数据还未初始化，所以此时不能使用data中的数据和methods中的方法。</p>
+</li>
+<li><p>create：data 和 methods初始化完毕，此时可以使用methods 中的方法和data 中的数据。</p>
+<h5 id="1-1-2-挂载前-后"><a href="#1-1-2-挂载前-后" class="headerlink" title="1.1.2 挂载前/后"></a><strong>1.1.2 挂载前/后</strong></h5></li>
+<li><p>beforeMount：template模版已经编译好，但还未挂载到页面，此时页面还是上一个状态。</p>
+</li>
+<li><p>mounted：此时Vue实例初始化完成了，DOM挂载完毕，可以直接操作dom或者使用第三方dom库。</p>
+</li>
+</ul>
+<h5 id="1-1-3-更新前-后"><a href="#1-1-3-更新前-后" class="headerlink" title="1.1.3 更新前/后"></a><strong>1.1.3 更新前/后</strong></h5><ul>
+<li>beforeUpdate： 此时data已更新，但还未同步页面。</li>
+<li>updated：data和页面都已经更新完成。</li>
+</ul>
+<h5 id="1-1-4-销毁前-后"><a href="#1-1-4-销毁前-后" class="headerlink" title="1.1.4 销毁前/后"></a><strong>1.1.4 销毁前/后</strong></h5><ul>
+<li>beforeDestory：Vue实例进入销毁阶段，但所有的 data 和 methods ， 指令， 过滤器等都处于可用状态。</li>
+<li>destroyed： 此时组件已经被销毁，data，methods等都不可用。</li>
+</ul>
+<p>根据以上介绍，页面第一次加载时会执行 beforeCreate， created， beforeMount， mounted这四个生命周期。</p>
+<p><strong>所以：</strong></p>
+<p>我们一般在 created 阶段处理http请求获取数据或者对data做一定的处理。</p>
+<p>我们会在 mounted 阶段操作dom，比如使用jquery，或者其他第三方dom库。</p>
+<p>其次，根据以上不同周期下数据和页面状态的不同，我们还可以做其他更多操作，所以说每个生命周期的发展状态非常重要，一定要理解，这样才能对vue有更多的控制权。</p>
+<h4 id="1-2-vue常用的指令以及动态指令的使用"><a href="#1-2-vue常用的指令以及动态指令的使用" class="headerlink" title="1.2 vue常用的指令以及动态指令的使用"></a><strong>1.2 vue常用的指令以及动态指令的使用</strong></h4><p>指令 (Directives) 是带有 v- 前缀的特殊属性。</p>
+<h5 id="1-2-1-vue常用的指令："><a href="#1-2-1-vue常用的指令：" class="headerlink" title="1.2.1 vue常用的指令："></a><strong>1.2.1 vue常用的指令：</strong></h5><ul>
+<li>v-bind 用于响应式地更新 HTML属性</li>
+<li>v-if 根据表达式的值的真假来决定是否插入/移除元素</li>
+<li>v-on 用于监听 DOM 事件</li>
+<li>v-show 用于决定是否展示该元素，底层通过display：none实现</li>
+<li>v-html 在dom内插入html内容</li>
+<li>v-for 循环</li>
+<li>v-text 渲染指定dom的内容文本</li>
+<li>v-cloak 和CSS规则如 [v-cloak] { display: none } 一起用，可以隐藏未编译的 Mustache 标签直到实例准备完毕</li>
+</ul>
+<p>以上是比较常用的指令，其中v-cloak主要是用来避免页面加载时出现闪烁的问题，可以结合css的[v-cloak] { display: none }  方式解决这一问题。关于指令的动态参数，使用也很简单，方法很灵活，具体使用如下：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">v-on:</span>[<span class="attr">eventName</span>]=<span class="string">&quot;doSomething&quot;</span>&gt;</span> ... <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<p>可以根据具体情况动态切换事件名，从而绑定同一个函数。</p>
+<h4 id="1-3-vue常用修饰符及作用"><a href="#1-3-vue常用修饰符及作用" class="headerlink" title="1.3 vue常用修饰符及作用"></a><strong>1.3 vue常用修饰符及作用</strong></h4><ol>
+<li><h5 id="事件修饰符"><a href="#事件修饰符" class="headerlink" title="事件修饰符"></a>事件修饰符</h5></li>
+</ol>
+<ul>
+<li>.stop 阻止事件冒泡</li>
+<li>.prevent 阻止事件默认行为</li>
+<li>.self 事件绑定的元素本身触发时才触发回调</li>
+<li>.once 事件只能触发一次，第二次就不会触发了</li>
+<li>.native 将一个vue组件变成一个普通的html，使其可以监听click等原生事件 具体使用如下：</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Tag</span> @<span class="attr">click.native</span>=<span class="string">&quot;handleClick&quot;</span>&gt;</span>ok<span class="tag">&lt;/<span class="name">Tag</span>&gt;</span></span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-表单修饰符"><a href="#2-表单修饰符" class="headerlink" title="2. 表单修饰符"></a>2. 表单修饰符</h5><ul>
+<li>.lazy 在输入框输入完内容，光标离开时才更新视图</li>
+<li>.trim 过滤首尾空格</li>
+<li>.number 如果先输入数字，那它就会限制你输入的只能是数字;如果先输入字符串，那就相当于没有加.number</li>
+</ul>
+<p>用法如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="built_in">input</span> <span class="built_in">type</span>=<span class="string">&quot;text&quot;</span> v-model.trim=<span class="string">&quot;value&quot;</span>&gt;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<p>还有很多修饰符比如键盘，鼠标等修饰符等等。。。</p>
+<h4 id="1-4-组件间-父子组件间的通信方案"><a href="#1-4-组件间-父子组件间的通信方案" class="headerlink" title="1.4 组件间-父子组件间的通信方案"></a><strong>1.4 组件间-父子组件间的通信方案</strong></h4><p>组件之间的通信方案：</p>
+<ul>
+<li>通过事件总线（bus），即通过发布订阅的方式</li>
+<li>vuex 状态管理器</li>
+</ul>
+<p>父子组件：</p>
+<ul>
+<li>父组件通过prop向自组件传递数据</li>
+<li>子组件绑定自定义事件，通过this.$emit(event,params) 来调用自定义事件</li>
+<li>使用vue提供的 children &amp; $refs方法来通信</li>
+</ul>
+<h4 id="1-5-vue实现按需加载组件"><a href="#1-5-vue实现按需加载组件" class="headerlink" title="1.5 vue实现按需加载组件"></a><strong>1.5 vue实现按需加载组件</strong></h4><p>组件的按需加载是项目性能优化的一个环节，也可以降低首屏渲染时间，笔者在项目中用到的组件按需加载的方式如下：</p>
+<ol>
+<li>使用() =&gt; import()， 具体代码如下：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">&lt;div&gt;</span><br><span class="line">&lt;ComponentA &#x2F;&gt;</span><br><span class="line">&lt;ComponentB &#x2F;&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">const ComponentA &#x3D; () &#x3D;&gt; import(&#39;.&#x2F;ComponentA&#39;)</span><br><span class="line">const ComponentB &#x3D; () &#x3D;&gt; import(&#39;.&#x2F;ComponentB&#39;)</span><br><span class="line">export default &#123;</span><br><span class="line">&#x2F;&#x2F; ...</span><br><span class="line">    components: &#123;</span><br><span class="line">    ComponentA,</span><br><span class="line">    ComponentB</span><br><span class="line">    &#125;,</span><br><span class="line">&#x2F;&#x2F; ...</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>使用resolve =&gt; require([‘./ComponentA’], resolve)，使用方法如下：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">&lt;div&gt;</span><br><span class="line">&lt;ComponentA &#x2F;&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">const ComponentA &#x3D; resolve &#x3D;&gt; require([&#39;.&#x2F;ComponentA&#39;], resolve)</span><br><span class="line">export default &#123;</span><br><span class="line">&#x2F;&#x2F; ...</span><br><span class="line">    components: &#123;</span><br><span class="line">    ComponentA</span><br><span class="line">    &#125;,</span><br><span class="line">&#x2F;&#x2F; ...</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-6-vuex的几种属性和作用，以及使用vuex的基本模式"><a href="#1-6-vuex的几种属性和作用，以及使用vuex的基本模式" class="headerlink" title="1.6 vuex的几种属性和作用，以及使用vuex的基本模式"></a><strong>1.6 vuex的几种属性和作用，以及使用vuex的基本模式</strong></h4><blockquote>
+<p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。</p>
+<p>它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。</p>
+</blockquote>
+<p>vuex的基本工作模式如下图所示：</p>
+<p><img src="/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/4833.png" alt="vuex的基本工作模式"></p>
+<p>state的改变完全由mutations控制， <strong>也没必要任何项目都使用vuex，对于中大型复杂项目而言，需要共享的状态很多时，使用vuex才是最佳的选择。</strong></p>
+<h5 id="vuex各api模式的概念和作用"><a href="#vuex各api模式的概念和作用" class="headerlink" title="vuex各api模式的概念和作用:"></a><strong>vuex各api模式的概念和作用:</strong></h5><ul>
+<li><p>state 单一状态树，用一个对象就包含了全部的应用层级状态，并且作为一个唯一数据源而存在</p>
+</li>
+<li><p>getters 就像计算属性一样，getter 的返回值会根据它的依赖被缓存起来，且只有当它的依赖值发生了改变才会被重新计算，可以实现实时监测变化。</p>
+</li>
+<li><p>Mutation 更改 Vuex 的 store 中的状态的唯一方法，使用案例如下：</p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> Vuex.Store(&#123;</span><br><span class="line">state: &#123;</span><br><span class="line">  num: <span class="number">1</span></span><br><span class="line"> &#125;,</span><br><span class="line">mutations: &#123;</span><br><span class="line">  add (state) &#123;</span><br><span class="line"><span class="comment">// 变更状态</span></span><br><span class="line">      state.num++</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// 在项目中使用mutation</span></span><br><span class="line">store.commit(<span class="string">&#x27;add&#x27;</span>)</span><br><span class="line"><span class="comment">// 添加额外参数</span></span><br><span class="line">store.commit(<span class="string">&#x27;add&#x27;</span>, <span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Action 提交的是mutation，而不是直接变更状态，可以包含任意异步操作，具体用法如下：</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> Vuex.Store(&#123;</span><br><span class="line">state: &#123;</span><br><span class="line">num: </span><br><span class="line">  &#125;,</span><br><span class="line">mutations: &#123;</span><br><span class="line">    add (state) &#123;</span><br><span class="line">      state.num++</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">actions: &#123;</span><br><span class="line">    add (context) &#123;</span><br><span class="line">      context.commit(<span class="string">&#x27;add&#x27;</span>)</span><br><span class="line">    &#125;,</span><br><span class="line">    asyncAdd (&#123; commit &#125;) &#123;</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">      commit(<span class="string">&#x27;add&#x27;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// 分发action</span></span><br><span class="line">store.dispatch(<span class="string">&#x27;add&#x27;</span>)</span><br><span class="line"><span class="comment">// 异步action</span></span><br><span class="line">store.dispatch(<span class="string">&#x27;asyncAdd&#x27;</span>)</span><br><span class="line"><span class="comment">// 异步传参</span></span><br><span class="line">store.dispatch(<span class="string">&#x27;asyncAdd&#x27;</span>, &#123; <span class="attr">num</span>: <span class="number">10</span> &#125;)</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Module 将store分割成模块（module）。每个模块拥有自己的 state、mutation、action、getter、甚至是嵌套子模块</li>
+</ul>
+<p>​                <strong>标准使用模式如下：</strong></p>
+<p><img src="/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/35ae.png"></p>
+<p>store目录是用来组织vuex代码用的，将action，mutation，state分文件管理，这样项目大了之后很容易管理和查询。</p>
+<p><strong>摘来的一个很好模板和列子：</strong></p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// type.ts</span></span><br><span class="line"><span class="comment">// 用来定义state等的类型文件</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">interface</span> State &#123;</span><br><span class="line">name: <span class="built_in">string</span>;</span><br><span class="line">    isLogin: <span class="built_in">boolean</span>;</span><br><span class="line">    config: Config;</span><br><span class="line">    [propName: <span class="built_in">string</span>]: <span class="built_in">any</span>;  <span class="comment">// 用来定义可选的额外属性</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">interface</span> Config &#123;</span><br><span class="line">header: HeaderType,</span><br><span class="line">banner: Banner,</span><br><span class="line">bannerSider: BannerSider,</span><br><span class="line">supportPay: SupportPay</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">interface</span> Response &#123;</span><br><span class="line">    [propName: <span class="built_in">string</span>]: <span class="built_in">any</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">// state.ts</span></span><br><span class="line"><span class="comment">// 定义全局状态</span></span><br><span class="line"><span class="keyword">import</span> &#123; State &#125; <span class="keyword">from</span> <span class="string">&#x27;./type&#x27;</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> state: State = &#123;</span><br><span class="line">name: <span class="string">&#x27;&#x27;</span>,</span><br><span class="line">isLogin: <span class="literal">false</span>,</span><br><span class="line">curScreen: <span class="string">&#x27;0&#x27;</span>, <span class="comment">// 0为pc， 1为移动</span></span><br><span class="line">    config: &#123;</span><br><span class="line">header: &#123;</span><br><span class="line">columns: [<span class="string">&#x27;首页&#x27;</span>, <span class="string">&#x27;产品&#x27;</span>, <span class="string">&#x27;技术&#x27;</span>, <span class="string">&#x27;运营&#x27;</span>, <span class="string">&#x27;商业&#x27;</span>],</span><br><span class="line">height: <span class="string">&#x27;50&#x27;</span>,</span><br><span class="line">backgroundColor: <span class="string">&#x27;#000000&#x27;</span>,</span><br><span class="line">logo: <span class="string">&#x27;&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line"><span class="comment">// ...</span></span><br><span class="line">    articleDetail: <span class="literal">null</span></span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line"><span class="comment">// mutation.ts</span></span><br><span class="line"><span class="keyword">import</span> &#123;</span><br><span class="line">    State,</span><br><span class="line">    Config,</span><br><span class="line">    HeaderType,</span><br><span class="line">    Banner,</span><br><span class="line">    BannerSider,</span><br><span class="line">    SupportPay</span><br><span class="line">&#125; <span class="keyword">from</span> <span class="string">&#x27;./type&#x27;</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line"><span class="comment">// 预览模式</span></span><br><span class="line">    <span class="function"><span class="title">setScreen</span>(<span class="params">state: State, payload: <span class="built_in">string</span></span>)</span> &#123;</span><br><span class="line">        state.curScreen = payload;</span><br><span class="line">    &#125;,</span><br><span class="line"> </span><br><span class="line"><span class="comment">// 删除banner图</span></span><br><span class="line">    <span class="function"><span class="title">delBanner</span>(<span class="params">state: State, payload: <span class="built_in">number</span></span>)</span> &#123;</span><br><span class="line">        state.config.banner.bannerList.splice(payload, <span class="number">1</span>);</span><br><span class="line">    &#125;,</span><br><span class="line"> </span><br><span class="line"><span class="comment">// 添加banner图</span></span><br><span class="line">    <span class="function"><span class="title">addBanner</span>(<span class="params">state: State, payload: <span class="built_in">object</span></span>)</span> &#123;</span><br><span class="line">        state.config.banner.bannerList.push(payload);</span><br><span class="line">    &#125;,</span><br><span class="line"> </span><br><span class="line"><span class="comment">// ...</span></span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line"><span class="comment">// action.ts</span></span><br><span class="line"><span class="keyword">import</span> &#123;</span><br><span class="line">    HeaderType,</span><br><span class="line">    Response</span><br><span class="line"> &#125; <span class="keyword">from</span> <span class="string">&#x27;./type&#x27;</span></span><br><span class="line"><span class="keyword">import</span> http <span class="keyword">from</span> <span class="string">&#x27;../utils/http&#x27;</span></span><br><span class="line"><span class="keyword">import</span> &#123; uuid, formatTime &#125; <span class="keyword">from</span> <span class="string">&#x27;../utils/common&#x27;</span></span><br><span class="line"><span class="keyword">import</span> &#123; message &#125; <span class="keyword">from</span> <span class="string">&#x27;ant-design-vue&#x27;</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line"><span class="comment">/**配置 */</span></span><br><span class="line">    <span class="function"><span class="title">setConfig</span>(<span class="params">context: <span class="built_in">any</span>, paylod: HeaderType</span>)</span> &#123;</span><br><span class="line">        http.get(<span class="string">&#x27;/config/all&#x27;</span>).then(<span class="function">(<span class="params">res:Response</span>) =&gt;</span> &#123;</span><br><span class="line">            context.commit(<span class="string">&#x27;setConfig&#x27;</span>, res.data)</span><br><span class="line">        &#125;).catch(<span class="function">(<span class="params">err:<span class="built_in">any</span></span>) =&gt;</span> &#123;</span><br><span class="line">            message.error(err.data)</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line"><span class="comment">/**header */</span></span><br><span class="line">    <span class="function"><span class="title">saveHeader</span>(<span class="params">context: <span class="built_in">any</span>, paylod: HeaderType</span>)</span> &#123;</span><br><span class="line">        http.post(<span class="string">&#x27;/config/setHeader&#x27;</span>, paylod).then(<span class="function">(<span class="params">res:Response</span>) =&gt;</span> &#123;</span><br><span class="line">            message.success(res.data)</span><br><span class="line">            context.commit(<span class="string">&#x27;saveHeader&#x27;</span>, paylod)</span><br><span class="line">        &#125;).catch(<span class="function">(<span class="params">err:<span class="built_in">any</span></span>) =&gt;</span> &#123;</span><br><span class="line">            message.error(err.data)</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line"><span class="comment">// ...</span></span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line"><span class="comment">// index.ts</span></span><br><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> Vuex <span class="keyword">from</span> <span class="string">&#x27;vuex&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; state &#125; <span class="keyword">from</span> <span class="string">&#x27;./state&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> mutations <span class="keyword">from</span> <span class="string">&#x27;./mutation&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> actions <span class="keyword">from</span> <span class="string">&#x27;./action&#x27;</span>;</span><br><span class="line"> </span><br><span class="line">Vue.use(Vuex);</span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> Vuex.Store(&#123;</span><br><span class="line">  state,</span><br><span class="line">  mutations,</span><br><span class="line">  actions</span><br><span class="line">&#125;);</span><br><span class="line"> </span><br><span class="line"><span class="comment">// main.ts</span></span><br><span class="line"><span class="comment">// 最后挂载到入口文件的vue实例上</span></span><br><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">&#x27;./App.vue&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> router <span class="keyword">from</span> <span class="string">&#x27;./router&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> store <span class="keyword">from</span> <span class="string">&#x27;./store/&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./component-class-hooks&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./registerServiceWorker&#x27;</span>;</span><br><span class="line"> </span><br><span class="line">Vue.config.productionTip = <span class="literal">false</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  router,</span><br><span class="line">  store,</span><br><span class="line">render: <span class="function">(<span class="params">h</span>) =&gt;</span> h(App),</span><br><span class="line">&#125;).$mount(<span class="string">&#x27;#app&#x27;</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>在实际项目中都可以使用这种方式组织管理vuex相关的代码</strong></p>
+<h4 id="1-7-vue-router基本使用模式和导航钩子的用法及作用"><a href="#1-7-vue-router基本使用模式和导航钩子的用法及作用" class="headerlink" title="1.7 vue-router基本使用模式和导航钩子的用法及作用"></a><strong>1.7 vue-router基本使用模式和导航钩子的用法及作用</strong></h4><p><strong>从前辈那摘来的一个例子：</strong></p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// router.ts</span></span><br><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> Router <span class="keyword">from</span> <span class="string">&#x27;vue-router&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> Home <span class="keyword">from</span> <span class="string">&#x27;./views/admin/Home.vue&#x27;</span>;</span><br><span class="line"> </span><br><span class="line">Vue.use(Router);</span><br><span class="line"> </span><br><span class="line"><span class="keyword">const</span> router =  <span class="keyword">new</span> Router(&#123;</span><br><span class="line">mode: <span class="string">&#x27;history&#x27;</span>,</span><br><span class="line">base: process.env.BASE_URL,</span><br><span class="line">routes: [</span><br><span class="line">    &#123;</span><br><span class="line">path: <span class="string">&#x27;/&#x27;</span>,</span><br><span class="line">component: Home,</span><br><span class="line">beforeEnter: <span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">        next();</span><br><span class="line">      &#125;,</span><br><span class="line">children: [</span><br><span class="line">        &#123;</span><br><span class="line"><span class="comment">// 当 /user/:id/profile 匹配成功，</span></span><br><span class="line"><span class="comment">// UserProfile 会被渲染在 User 的 &lt;router-view&gt; 中</span></span><br><span class="line">          path: <span class="string">&#x27;&#x27;</span>,</span><br><span class="line">name: <span class="string">&#x27;header&#x27;</span>,</span><br><span class="line">component: <span class="function">() =&gt;</span> <span class="keyword">import</span>(<span class="comment">/* webpackChunkName: &quot;header&quot; */</span> <span class="string">&#x27;./views/admin/subpage/Header.vue&#x27;</span>),</span><br><span class="line">        &#125;,</span><br><span class="line"> </span><br><span class="line">        &#123;</span><br><span class="line">path: <span class="string">&#x27;/banner&#x27;</span>,</span><br><span class="line">name: <span class="string">&#x27;banner&#x27;</span>,</span><br><span class="line">component: <span class="function">() =&gt;</span> <span class="keyword">import</span>(<span class="comment">/* webpackChunkName: &quot;banner&quot; */</span> <span class="string">&#x27;./views/admin/subpage/Banner.vue&#x27;</span>),</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">path: <span class="string">&#x27;/admin&#x27;</span>,</span><br><span class="line">name: <span class="string">&#x27;admin&#x27;</span>,</span><br><span class="line">component: <span class="function">() =&gt;</span> <span class="keyword">import</span>(<span class="comment">/* webpackChunkName: &quot;admin&quot; */</span> <span class="string">&#x27;./views/admin/Admin.vue&#x27;</span>),</span><br><span class="line">        &#125;,</span><br><span class="line">      ],</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">path: <span class="string">&#x27;/login&#x27;</span>,</span><br><span class="line">name: <span class="string">&#x27;login&#x27;</span>,</span><br><span class="line">component: <span class="function">() =&gt;</span> <span class="keyword">import</span>(<span class="comment">/* webpackChunkName: &quot;login&quot; */</span> <span class="string">&#x27;./views/Login.vue&#x27;</span>),</span><br><span class="line">meta:&#123;</span><br><span class="line">keepAlive:<span class="literal">false</span> <span class="comment">//不需要被缓存的组件</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">path: <span class="string">&#x27;*&#x27;</span>,</span><br><span class="line">name: <span class="string">&#x27;404&#x27;</span>,</span><br><span class="line">component: <span class="function">() =&gt;</span> <span class="keyword">import</span>(<span class="comment">/* webpackChunkName: &quot;404&quot; */</span> <span class="string">&#x27;./views/404.vue&#x27;</span>),</span><br><span class="line">    &#125;,</span><br><span class="line">  ],</span><br><span class="line">&#125;);</span><br><span class="line"> </span><br><span class="line"><span class="comment">// 路由导航钩子的用法</span></span><br><span class="line">router.beforeEach(<span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">from</span>.path.indexOf(<span class="string">&#x27;/preview&#x27;</span>) &lt; ) &#123;</span><br><span class="line">    sessionStorage.setItem(<span class="string">&#x27;prevToPreviewPath&#x27;</span>, <span class="keyword">from</span>.path);</span><br><span class="line">  &#125;</span><br><span class="line">  next();</span><br><span class="line">&#125;)</span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> router</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<p>以上案例是很典型的静态路由配置和导航钩子的用法（如何加载路由组件，动态加载路由组件，404页面路由配置，路由导航钩子使用）。</p>
+<p>如果做后台系统，往往会涉及到权限系统，所以一般会采用动态配置路由，通过前后端约定的路由方式，路由配置文件更具不同用户的权限由后端处理后返。</p>
+<p>由于设计细节比较繁琐，涉及到前后端协定，所以这里浅谈方法思想，随机应变。</p>
+<h4 id="1-8-vue中检测变化的注意点"><a href="#1-8-vue中检测变化的注意点" class="headerlink" title="1.8 vue中检测变化的注意点"></a><strong>1.8 vue中检测变化的注意点</strong></h4><p>受现代 JavaScript 的限制，Vue 无法检测到对象属性的添加或删除。由于 Vue 会在初始化实例时对属性执行 getter/setter 转化，所以属性必须在 data 对象上存在才能让 Vue 将它转换为响应式的。还有一种情况是，vue无法检测到data属性值为数组或对象的修改，所以我们需要用原对象与要混合进去的对象的属性一起创建一个新的对象。可以使用this.$set或者对象的深拷贝，如果是数组则可以使用splice，扩展运算符等方法来更新。</p>
+<h4 id="1-9-对指定页面使用keep-alive内置组件路由缓存"><a href="#1-9-对指定页面使用keep-alive内置组件路由缓存" class="headerlink" title="1.9 对指定页面使用keep-alive内置组件路由缓存"></a><strong>1.9 对指定页面使用keep-alive内置组件路由缓存</strong></h4><p>keep-alive是Vue的内置组件，能在组件切换过程中将状态保留在内存中，防止重复渲染DOM。我们可以使用以下方式设置某些页面是否被缓存：</p>
+<ol>
+<li><h5 id="通过路由配置文件和router-view设置：路由视图配置："><a href="#通过路由配置文件和router-view设置：路由视图配置：" class="headerlink" title="通过路由配置文件和router-view设置：路由视图配置："></a>通过路由配置文件和router-view设置：路由视图配置：</h5></li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// routes 配置</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> [</span><br><span class="line">  &#123;</span><br><span class="line">path: <span class="string">&#x27;/A&#x27;</span>,</span><br><span class="line">name: <span class="string">&#x27;A&#x27;</span>,</span><br><span class="line">component: A,</span><br><span class="line">meta: &#123;</span><br><span class="line">keepAlive: <span class="literal">true</span> <span class="comment">// 需要被缓存</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;, &#123;</span><br><span class="line">path: <span class="string">&#x27;/B&#x27;</span>,</span><br><span class="line">name: <span class="string">&#x27;B&#x27;</span>,</span><br><span class="line">component: B,</span><br><span class="line">meta: &#123;</span><br><span class="line">keepAlive: <span class="literal">false</span> <span class="comment">// 不需要被缓存</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<p>路由视图配置：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 路由设置</span></span><br><span class="line">&lt;keep-alive&gt;</span><br><span class="line">&lt;router-view v-<span class="keyword">if</span>=<span class="string">&quot;$route.meta.keepAlive&quot;</span>&gt;</span><br><span class="line">&lt;!-- 会被缓存的视图组件--&gt;</span><br><span class="line">&lt;/router-view&gt;</span><br><span class="line">&lt;/keep-alive&gt;</span><br><span class="line"></span><br><span class="line">&lt;router-view v-<span class="keyword">if</span>=<span class="string">&quot;!$route.meta.keepAlive&quot;</span>&gt;</span><br><span class="line">&lt;!-- 不需要缓存的视图组件--&gt;</span><br><span class="line">&lt;/router-view&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>通过router-view的key属性 具体方式如下：</li>
+</ol>
+<p>​        </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">&lt;div id=<span class="string">&quot;app&quot;</span>&gt;</span><br><span class="line">&lt;keep-alive&gt;</span><br><span class="line">&lt;router-view :key=<span class="string">&quot;key&quot;</span> /&gt;</span><br><span class="line">&lt;/keep-alive&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script lang=<span class="string">&quot;ts&quot;</span>&gt;</span><br><span class="line"><span class="keyword">import</span> &#123; Vue &#125; <span class="keyword">from</span> <span class="string">&#x27;vue-property-decorator&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> Component <span class="keyword">from</span> <span class="string">&#x27;vue-class-component&#x27;</span>;</span><br><span class="line">@Component</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Vue</span> </span>&#123;</span><br><span class="line">  <span class="keyword">get</span> <span class="title">key</span>() &#123;</span><br><span class="line"><span class="comment">// 缓存除预览和登陆页面之外的其他页面</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">this</span>.$route.path)</span><br><span class="line"><span class="keyword">if</span>(<span class="built_in">this</span>.$route.path.indexOf(<span class="string">&#x27;/preview&#x27;</span>) &gt; -<span class="number">1</span>) &#123;</span><br><span class="line"><span class="keyword">return</span> <span class="string">&#x27;0&#x27;</span></span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">this</span>.$route.path === <span class="string">&#x27;/login&#x27;</span>) &#123;</span><br><span class="line"><span class="keyword">return</span> <span class="string">&#x27;1&#x27;</span></span><br><span class="line">    &#125;<span class="keyword">else</span> &#123;</span><br><span class="line"><span class="keyword">return</span> <span class="string">&#x27;2&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-vue项目配置经验总结"><a href="#2-vue项目配置经验总结" class="headerlink" title="2. vue项目配置经验总结"></a><strong>2. vue项目配置经验总结</strong></h2><p>​        需要知道从0开始搭建项目的步骤，以及通过项目实际情况，自己配置一个符合的项目框架，比如有些公司会采用vue+element+vue+less搭建，有些公司采用vue+iview+vue+sass，或者其他更多的技术栈，所以要有把控能力，我们需要熟悉webpack或者vue-cli3脚手架的配置，之前有过一些简单的webpack和vue-cli3搭建经历，还要系统性学习。</p>
+<p><strong>接下去就是求职，在工作中积累学习了，祝我好运。</strong></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>清时
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://www.weiqsctj.wang/2022/03/19/%E5%AE%9E%E4%B9%A0%E5%90%8E%E5%AF%B9vue%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB/" title="实习后对vue项目实战经验汇总">http://www.weiqsctj.wang/2022/03/19/实习后对vue项目实战经验汇总/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://www.zhihu.com/people/tian-yuan-60-19-35">
+          <span class="icon">
+            <i class="fab fa-zhihu"></i>
+          </span>
+
+          <span class="label">知乎</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/images/wechat_channel.jpg">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+
+          <span class="label">微信公众号</span>
+        </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E9%A1%B9%E7%9B%AE/" rel="tag"># 项目</a>
+              <a href="/tags/vue/" rel="tag"># vue</a>
+              <a href="/tags/elementUI/" rel="tag"># elementUI</a>
+              <a href="/tags/%E5%AE%9E%E4%B9%A0/" rel="tag"># 实习</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/12/20/Hexo%E7%9A%84%E4%B9%A6%E5%86%99%E5%92%8C%E4%BD%BF%E7%94%A8/" rel="prev" title="Hexo的书写和使用">
+                  <i class="fa fa-chevron-left"></i> Hexo的书写和使用
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/03/20/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="next" title="MySQL学习笔记">
+                  MySQL学习笔记 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">清时</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+
+<script>
+var options = {
+  bottom: '64px', // default: '32px'
+  right: 'unset', // default: '32px'
+  left: '32px', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: true, // default: true,
+  label: ' ', // default: ''
+  autoMatchOsTheme: true // default: true
+}
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+</script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
